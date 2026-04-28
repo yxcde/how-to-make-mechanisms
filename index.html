@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Course materials, slides, code examples and references." />
+  <title>How to Make Mechanisms of Control – Course Materials</title>
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- =========================
+       THEME TOGGLE (no JS)
+       ========================= -->
+  <!--
+    Explanation:
+    The checkbox #theme-toggle is visually turned into a toggle in CSS.
+    When it's checked, we apply .theme-dark to <body> using :has().
+    :has() is supported in all modern browsers including Safari 17+, Firefox 121+, Chrome 105+.
+
+    Fallback:
+    If a browser doesn't support :has(), it will just stay in light mode.
+  -->
+  <input type="checkbox" id="theme-toggle" class="visually-hidden" />
+  <div class="topbar-wrapper">
+    <div class="topbar container">
+      <label class="theme-switch" for="theme-toggle">
+        <span class="theme-label">
+          <span class="theme-light-label">☀︎ Light</span>
+          <span class="theme-dark-label">☾ Dark</span>
+        </span>
+        <span class="theme-slider" aria-hidden="true"></span>
+      </label>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="headline">How to Make Mechanisms of Control</h1>
+      <p class="subheadline">UdK Berlin / Summer Semester 2026</p>
+
+      <div class="course-intro card">
+        <h2>Course description</h2>
+        <p>
+         Art no longer just hangs on a wall; it breathes, moves, and reacts. To truly understand the hidden systems behind interactive art, we must build them. A hands-on, rapid-prototyping studio course focused on bridging digital intention with physical reality. Every week, discover a new technology. Work in small collectives (2-3) to build and present a functional, conceptual prototype over the next seven days. The Goal: Think through making. We favour experimentation and iteration over perfection.
+        </p>
+        <p>
+          Below you’ll find the slide decks, demo codes, additional material, and
+          references of our weekly sessions. All content is for study use only.
+        </p>
+      </div>
+
+      <!-- =========================
+           TABLE OF CONTENTS
+           ========================= -->
+      <nav class="toc card">
+        <h2 class="toc-title">Table of Contents</h2>
+        <ol class="toc-list">
+          <!-- Just add a new <li><a href="#week-XX">...</a></li> for each new week -->
+          <li><a href="#week-01">Week 01 — Intro to physical pixels</a></li>
+          <!--<li><a href="#week-02">Week 02 — From Electrons to Expression</a></li>
+          <li><a href="#week-03">Week 03 — From Signal to Interaction</a></li>
+          <li><a href="#week-04">Week 04 — Control from a Computer</a></li>
+          <li><a href="#week-05">Week 05 — Light as a Medium</a></li>
+          <li><a href="#week-06">Week 06 — Motion as a means of Expression</a></li>
+          <li><a href="#week-07">Week 07 — From idea to prototype to exhibition</a></li>-->
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+
+    <!-- ========== WEEK BLOCK EXAMPLE ========== -->
+    <section class="week-block" id="week-01">
+      <div class="week-header">
+        <div>
+          <h2 class="week-title">Week 01 — Intro to physical pixels</h2>
+          <p class="week-date">April 29, 2026</p>
+        </div>
+        <span class="week-tag">Basics</span>
+      </div>
+
+      <p class="week-summary">
+        We talked about the basics of Arduino, the Rapsberry Pi Pico 2W, got an introduction to what Arduino is,
+        how we can use it for artistic and design projects. We looked at the basic blink-Example 
+        and how to write a non-blocking version of it to be able to "do something else while the LED blinks".
+      </p>
+
+      <ul class="resource-list">
+        <li class="resource-item">
+          <span class="resource-label">Slides:</span>
+          <a href="week01/Intro_to_physical_pixels/index.html" class="resource-link">
+            Lecture deck (HTML)
+          </a>
+        </li>
+
+        <li class="resource-item">
+          <span class="resource-label">recap PDF:</span>
+          <a href="week01/01b_Recap_Introduction-to-Arduino.pdf" class="resource-link">
+            Recap Slides (PDF)
+          </a>
+        </li>    
+
+        <li class="resource-item">
+          <span class="resource-label">Code:</span>
+          <a href="week01/MoC_Week01_Example_Codes.zip" class="resource-link">
+            Arduino examples (ZIP)
+          </a>
+          <span class="resource-note">non-blocking blink, analogRead for LED Brightness</span>
+        </li>
+
+        <li class="resource-item">
+          <span class="resource-label">Example artwork 01:</span>
+          <a href="https://www.jimcampbell.tv/portfolio/exploded-view-birds" class="resource-link" target="_blank" rel="noopener">
+            Exploded Views Birds - light installation by Jim Campbell
+          </a>
+        </li>
+        
+        <li class="resource-item">
+          <span class="resource-label">Example artwork 02:</span>
+          <a href="https://www.youtube.com/watch?v=5LFzXwWzVjY" class="resource-link" target="_blank" rel="noopener">
+            Exhibition Trailer for Tatsuo Miyajima: Connect with Everything - aka. LED Works by Tatsuo Miyajima
+          </a>
+        </li>
+
+        <li class="resource-item">
+          <span class="resource-label">Extra reading:</span>
+          <a href="https://projecthub.arduino.cc/angadiameya007/getting-started-with-raspberry-pi-pico-in-arduino-ide-5e13ee" class="resource-link" target="_blank" rel="noopener">
+            Getting Started with the Raspberry Pi Pico in Arduino IDE
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- ========== END WEEK BLOCK EXAMPLE ========== -->
+
+
+    <!-- ========== DUPLICATE FROM HERE FOR NEW WEEKS ========== -->
+    <section class="week-block" id="week-02">
+      <div class="week-header">
+        <div>
+          <h2 class="week-title">Week 02 — From Electrons to Expression</h2>
+          <p class="week-date">October 29, 2025</p>
+        </div>
+        <span class="week-tag">Core Concepts</span>
+      </div>
+
+      <p class="week-summary">
+        We talked about how electrons move, what voltage and current mean
+        physically, why resistance matters, and how microcontrollers “see”
+        analog vs. digital signals. We also looked at how this translates
+        into artistic control (light, motion, potentially sound).
+      </p>
+
+      <ul class="resource-list">
+        <li class="resource-item">
+          <span class="resource-label">Slides:</span>
+          <a href="week02/02_From-Electrons-to-Expression/index.htm" class="resource-link">
+            Lecture deck (HTML)
+          </a>
+        </li>
+        
+        <li class="resource-item">
+          <span class="resource-label">Student Exploration Tasks:</span>
+          <a href="week02/MechOfControl_02_Analog-Digital_HandsOn_Tasks.pdf" class="resource-link">
+            Analog vs. Digital Hands on Tasks (PDF)
+          </a>
+          <span class="resource-note">Using switche & potentiometers to control LEDs</span>
+        </li>
+
+        <li class="resource-item">
+          <span class="resource-label">Example artwork:</span>
+          <a href="https://lukaszerbst.com/portfolio/follow-me-blindly/" class="resource-link" target="_blank" rel="noopener">
+            Follow me blindly by Lukas Zerbst
+          </a>
+        </li>
+
+        <li class="resource-item">
+          <span class="resource-label">Extra reading:</span>
+          <a href="https://docs.arduino.cc/learn/microcontrollers/analog-output/" class="resource-link" target="_blank" rel="noopener">
+            Basics of PWM (Pulse Width Modulation)
+          </a>
+        </li> 
+      </ul>
+    </section>
+    <!-- ========== END DUPLICATE BLOCK ========== -->
+
+    <!-- ========== DUPLICATE FROM HERE FOR NEW WEEKS ========== -->
+    <section class="week-block" id="week-03">
+      <div class="week-header">
+        <div>
+          <h2 class="week-title">Week 03 — From Signal to Interaction</h2>
+          <p class="week-date">November 05, 2025</p>
+        </div>
+        <span class="week-tag">Core Concepts</span>
+      </div>
+      <p class="week-summary">
+        We talked about how sensor data is an opportunity for design. Designing behaviour and feedback.
+        Part of this is utilising the Serial-functions to send data from an arduino to a computer. 
+        We also took a refresher look at basic structures such as for-loops, if-else-statments, debouncing and boolean toggles. 
+      </p>
+
+      <ul class="resource-list">
+        <li class="resource-item">
+          <span class="resource-label">Slides:</span>
+          <a href="week03/03_From_Signal_to_Interaction/index.htm" class="resource-link">
+            Lecture deck (HTML)
+          </a>
+          <span class="resource-note">This weeks task can be found at the end of the slide deck</span>
+        </li>
+      
+        <li class="resource-item">
+          <span class="resource-label">Example Codes:</span>
+          <a href="week03/MoC_Week03_Example_Codes.zip" class="resource-link">
+            Example Codes for Arduino, Processing, Python & TouchDesigner
+          </a>
+          <span class="resource-note">Serial communication, base structures and respective examples</span>
+        </li>
+
+        <li class="resource-item">
+          <span class="resource-label">Example artwork:</span>
+          <a href="https://driesdepoorter.be/recharge/" class="resource-link" target="_blank" rel="noopener">
+            Recharge by Dries Depoorter
+          </a>
+        </li>
+
+        <li class="resource-item">
+          <span class="resource-label">Example artwork:</span>
+          <a href="https://www.richardvijgen.nl/cosmic-wind-chime" class="resource-link" target="_blank" rel="noopener">
+            Cosmic Wind Chime by Richard Vijgen
+          </a>
+        </li>
+
+        <li class="resource-item">
+          <span class="resource-label">Extra reading:</span>
+          <a href="https://learn.sparkfun.com/tutorials/connecting-arduino-to-processing/all" class="resource-link" target="_blank" rel="noopener">
+            Connecting Arduino to Processing - Sparkfun Tutorial
+          </a>
+        </li> 
+        
+        
+      </ul>
+    </section>
+    <!-- ========== END DUPLICATE BLOCK ========== -->
+
+    <!-- ========== DUPLICATE FROM HERE FOR NEW WEEKS ========== -->
+    <section class="week-block" id="week-04">
+      <div class="week-header">
+        <div>
+          <h2 class="week-title">Week 04 — Control from a Computer</h2>
+          <p class="week-date">November 12, 2025</p>
+        </div>
+        <span class="week-tag">Core Concepts</span>
+      </div>      <p class="week-summary">
+        We talked about how to control an Arduino via the Serial port from our computer.
+        For this we looked at the basics of Serial receiving and sending on both ends.
+      </p>
+
+      <ul class="resource-list">
+        <li class="resource-item">
+          <span class="resource-label">Slides:</span>
+          <a href="week04/" class="resource-link">
+            Lecture deck (HTML)
+          </a>
+          <span class="resource-note">This weeks tasks are in the Code Examples (Arduino Example 01 & Example 02 have tasks)</span>
+        </li>
+      
+        <li class="resource-item">
+          <span class="resource-label">Example Codes:</span>
+          <a href="week04/MoC_Week04_Example_Codes.zip" class="resource-link">
+            Example Codes for Processing & TouchDesigner to control an Arduino
+          </a>
+          <span class="resource-note">Serial receiving, base structures and examples</span>
+        </li>
+
+
+        <li class="resource-item">
+          <span class="resource-label">Example artwork:</span>
+          <a href="https://thomasmarcusson.com/projects/ai-ball" class="resource-link" target="_blank" rel="noopener">
+            AI Ball by Thomas Marcusson
+          </a>
+        </li>
+
+        <li class="resource-item">
+          <span class="resource-label">Extra reading:</span>
+          <a href="https://learn.sparkfun.com/tutorials/connecting-arduino-to-processing/all" class="resource-link" target="_blank" rel="noopener">
+            Connecting Arduino to Processing - Sparkfun Tutorial
+          </a>
+        </li> 
+        
+        
+      </ul>
+    </section>
+    <!-- ========== END DUPLICATE BLOCK ========== -->
+
+    <!-- ========== DUPLICATE FROM HERE FOR NEW WEEKS ========== -->
+    <section class="week-block" id="week-05">
+      <div class="week-header">
+        <div>
+          <h2 class="week-title">Week 05 — Light as a Medium</h2>
+          <p class="week-date">November 26, 2025</p>
+        </div>
+        <span class="week-tag">Artistic Expression</span>
+      </div>      <p class="week-summary">
+        We talked about how different Artists use light in their work and got an overview of 
+        how to use LED strips as a technology for our Artworks.
+      </p>
+
+      <ul class="resource-list">
+        <li class="resource-item">
+          <span class="resource-label">Slides:</span>
+          <a href="week05/05_Light_As_a_Medium/index.htm" class="resource-link">
+            Lecture deck (HTML)
+          </a>
+          <span class="resource-note">A collection of light art examples in different configurations with two student tasks at the end. </span>
+        </li>
+      
+        <li class="resource-item">
+          <span class="resource-label">Example Codes:</span>
+          <a href="week05/MoC_Week05_Example_Codes.zip" class="resource-link">
+            Example Codes for Processing & Arduino to control RGB LED strips
+          </a>
+          <span class="resource-note">Color control via Serial and sensors</span>
+        </li>
+
+
+        <li class="resource-item">
+          <span class="resource-label">Example artwork:</span>
+          <a href="https://karstenschuhl.com/what-is-for-sure" class="resource-link" target="_blank" rel="noopener">
+            What is for Sure by Verena Bachl & Karsten Schuhl
+          </a>
+        </li>
+
+        <li class="resource-item">
+          <span class="resource-label">Example artwork:</span>
+          <a href="https://www.stefanreiss.com/portfolio/ot-987" class="resource-link" target="_blank" rel="noopener">
+            O.T. 987 by Stefan Reiss
+          </a>
+        </li>
+
+        <li class="resource-item">
+          <span class="resource-label">Extra reading:</span>
+          <a href="https://aidiwattlighting.com/the-ultimate-guide-to-addressable-led-strip/" class="resource-link" target="_blank" rel="noopener">
+            Overview guide to addressable LED strip types
+          </a>
+        </li> 
+        
+        
+      </ul>
+    </section>
+    <!-- ========== END DUPLICATE BLOCK ========== -->
+
+      <!-- ========== DUPLICATE FROM HERE FOR NEW WEEKS ========== -->
+    <section class="week-block" id="week-06">
+      <div class="week-header">
+        <div>
+          <h2 class="week-title">Week 06 — Motion as means of Expression</h2>
+          <p class="week-date">December 10, 2025</p>
+        </div>
+        <span class="week-tag">Artistic Expression</span>
+      </div>      <p class="week-summary">
+        A view into priciniples of motion and what we might want to consider regarding designing with motion in mind.
+      </p>
+
+      <ul class="resource-list">
+        <li class="resource-item">
+          <span class="resource-label">Slides:</span>
+          <a href="week06/06_Motion_as_a_means_of_Expression/index.htm" class="resource-link">
+            Lecture deck (HTML)
+          </a>
+          <span class="resource-note">An overview of motion and kinetic principles and the language to think about them</span>
+        </li>
+      
+        <li class="resource-item">
+          <span class="resource-label">Example Codes:</span>
+          <a href="week06/MoC_Week06_Example_Codes.zip" class="resource-link">
+            Example Codes for Processing & Arduino to control stepper motors
+          </a>
+          <span class="resource-note">Control a motor via Serial and sensors</span>
+        </li>
+        
+
+        <li class="resource-item">
+          <span class="resource-label">Extra reading:</span>
+          <a href="https://www.monolithicpower.com/en/learning/resources/stepper-motors-basics-types-uses" class="resource-link" target="_blank" rel="noopener">
+            Stepper Motors Basics: Types, Uses, and Working Principles
+          </a>
+        </li> 
+        
+        
+      </ul>
+    </section>
+    <!-- ========== END DUPLICATE BLOCK ========== -->
+
+    <!-- ========== DUPLICATE FROM HERE FOR NEW WEEKS ========== -->
+    <section class="week-block" id="week-07">
+      <div class="week-header">
+        <div>
+          <h2 class="week-title">Week 07 — From idea to prototype to exhibition</h2>
+          <p class="week-date">December 17, 2025</p>
+        </div>
+        <span class="week-tag">Prototyping</span>
+      </div>      <p class="week-summary">
+        How to take an idea create a prototype and make it exhibiton ready.
+      </p>
+
+      <ul class="resource-list">
+        <li class="resource-item">
+          <span class="resource-label">Slides:</span>
+          <a href="week07/07_Prototype_to_Exhibition/index.htm" class="resource-link">
+            Lecture deck (HTML)
+          </a>
+          <span class="resource-note">Some steps to follow to unravel an idea and create a prototyping structure from it.</span>
+        </li>
+        
+        <li class="resource-item">
+          <span class="resource-label">Example artwork:</span>
+          <a href="https://theartistbreakfast.com/works/brixel-mirror" class="resource-link" target="_blank" rel="noopener">
+            Brixel Mirror by BREAKFAST
+          </a>
+        </li> 
+
+      </ul>
+    </section>
+    <!-- ========== END DUPLICATE BLOCK ========== -->
+    <!-- ========== RESOURCES / POLICIES / CONTACT ========== -->
+    <section class="meta-block card">
+      <h2>General resources</h2>
+      <ul class="flat-list">
+        <li>
+          <a href="https://www.arduino.cc/reference/en/" target="_blank" rel="noopener">
+            Arduino Language Reference
+          </a>
+        </li>
+        <li>
+          <a href="https://processing.org/reference/" target="_blank" rel="noopener">
+            Processing Reference
+          </a>
+        </li>
+        <li>
+          <a href="https://learn.sparkfun.com/tutorials" target="_blank" rel="noopener">
+            SparkFun Tutorials (electronics basics)
+          </a>
+        </li>
+      </ul>
+
+      <h3>Usage / policy</h3>
+      <p class="smallprint">
+        All material is provided for course learning. Please credit sources if
+        you reuse material publicly. Commercial use is not permitted without
+        permission by teh respective authors.
+      </p>
+
+      <h3>Contact</h3>
+      <p class="smallprint">
+        Questions, missing files, or broken links:
+        <span class="nowrap">mail@karstenschuhl.com</span>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="smallprint">
+        © 2026 Karsten Schuhl / New Media Class - UdK Berlin - Department Visual Communication.
+        Hosted on GitHub Pages.
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- ===========================================================
+       NEW WEEK TEMPLATE
+       Copy/paste this block ABOVE the meta-block section.
+       Update the id, title, date, summary, and links.
+       Also add the new week to the TOC <ol> in the header.
+       ===========================================================
+
+    <section class="week-block" id="week-XX">
+      <div class="week-header">
+        <div>
+          <h2 class="week-title">Week XX — TITLE OF SESSION</h2>
+          <p class="week-date">DATE HERE</p>
+        </div>
+        <span class="week-tag">THEME / TAG</span>
+      </div>
+
+      <p class="week-summary">
+        Short description of what we covered. What concepts matter and why
+        they connect to design practice.
+      </p>
+
+      <ul class="resource-list">
+        <li class="resource-item">
+          <span class="resource-label">Slides:</span>
+          <a href="weekXX_slides.html" class="resource-link">
+            Lecture deck (HTML)
+          </a>
+        </li>
+
+        <li class="resource-item">
+          <span class="resource-label">Code:</span>
+          <a href="weekXX_examples.zip" class="resource-link">
+            In-class examples (ZIP)
+          </a>
+          <span class="resource-note">what’s inside the ZIP</span>
+        </li>
+
+        <li class="resource-item">
+          <span class="resource-label">Example artwork:</span>
+          <a href="https://example.com/some-project" class="resource-link" target="_blank" rel="noopener">
+            Reference project / artwork / paper
+          </a>
+        </li>
+
+        <li class="resource-item">
+          <span class="resource-label">Extra reading:</span>
+          <a href="https://example.com/background-reading" class="resource-link" target="_blank" rel="noopener">
+            Background reading
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  ============================================================ -->
+
+</body>
+</html>
