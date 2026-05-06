@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1" />
+<link rel="stylesheet" href="engine/main.css">
+<link rel="stylesheet" href="theme/tokyo.css">
+<link rel="stylesheet" href="engine/katex/katex.min.css">
+<style>
+:root{
+--logo: ;
+--darkaccent1color: ;
+--lightaccent1color: ;
+--accent2: #43aa8b;
+--accent3: #f9c74f;
+--accent4: #90be6d;
+--accent5: #f8961e;
+--accent6: #577590;
+--lighttitletextcolor: #ffffff;
+--darktitletextcolor: #000000;
+--lightbodytextcolor: #ffffff;
+--darkbodytextcolor: #000000;
+--lightbackgroundcolor: transparent;
+--darkbackgroundcolor: transparent;
+--bodyfont: system-ui;
+--titlefont: system-ui;
+--lightframecolor: #FFFFFF;
+--darkframecolor: #000000;
+} 
+
+</style>
+</head>
+<body class="responsive">
+<div class="reveal">
+<div class="slides">
+<section class="variable-size-headings dark cover-container responsive present has-light-background fitted" data-background-color="#4ea9e2" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><hgroup><p class="kicker">How to Make Mechanisms of Control, Session 1</p>
+
+<h1 id="introductiontothephysicalpixel">Introduction to the Physical Pixel</h1>
+
+<h3 id="thinkingthroughcircuits">Thinking Through Circuits</h3></hgroup></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present fit-warning has-light-background fitted" data-background-color="#4496d3" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.719rem;">
+        <div style=""><h2 id="learninggoals">Learning Goals</h2></div>
+        <div style=""><p>By the end of today we:</p>
+
+<ul>
+<li>Understand what a <strong>microcontroller</strong> is and what makes Arduino useful</li>
+<li>Grasp the structure of an <strong>Arduino sketch</strong> (<code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">setup</span><span class="hljs-params">()</span></span></code> and <code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">loop</span><span class="hljs-params">()</span></span></code>)</li>
+<li>Learned the difference between <strong>digital</strong> and <strong>analog</strong> signals</li>
+<li>See how <strong>sensors and output</strong> connect through code</li>
+<li>Can begin to imagine <strong>interactive behaviours</strong> as part of artistic expression</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark cover-container responsive present has-dark-background fitted" data-background-color="#3b83c4" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="whatcanarduinodoforartanddesign"><strong>What can Arduino do for art and design?</strong></h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-background-color="#3271b6" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><ul>
+<li>Bridge between <strong>physical and digital worlds</strong></li>
+<li>Enable works that <strong>react</strong>, <strong>move</strong>, <strong>listen</strong>, or <strong>shine</strong></li>
+<li>Expand material practice with <strong>behavior</strong> and <strong>time</strong></li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-background-color="#5473b5" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="whatisarduino">What Is Arduino?</h2>
+
+<p><strong>Arduino = Ecosystem</strong> </p>
+
+<ul>
+<li>Hardware (boards, such as the Pi Pico 2W)</li>
+<li>Software (IDE)</li>
+<li>Open-source community</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark cover-container responsive present has-dark-background fitted" data-background-color="#7675b3" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 class="kicker" id="keyidea:"><mark>Key idea:</mark></h3><h1 id="input→processing→output">Input → Processing → Output</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-light-background fitted" data-background-color="#9977b3" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 class="kicker" id="part1">Part 1</h3><h2 id="thementalmodel:whatisamicrocontroller">The Mental Model: What is a Microcontroller?</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark full-image-container responsive present has-dark-background fitted" data-background-color="#ac5e9b" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/4296-13.jpg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark full-image-container responsive present has-dark-background fitted" data-background-color="#be4683" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/6087-03.jpg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-background-color="#d22e6b" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><figure><img src="images/laptop-1846277_1280.jpg" class=" position-center-center"></figure></div>
+
+<h2 id="yourlaptopisaceo">Your laptop is a CEO</h2>
+
+<p>It is constantly distracted</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-background-color="#cf2e54" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><div class="single-image-wrapper"><figure><img src="images/6087-00.jpg" class=" position-center-center"></figure></div>
+
+<h2 id="thepipicoisamonk">The Pi Pico is a Monk</h2>
+
+<p>Wakes up, reads one script and does it to perfection</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-background-color="#cd2f3d" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><h2 id="amicrocontrollerisasmallcomputerthat:">A microcontroller is a small "computer" that:</h2>
+
+<ul>
+<li>Reads <strong>input</strong> (sensors)</li>
+<li>Processes <strong>logic</strong> (code)</li>
+<li>Controls <strong>output</strong> (actuators)</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present has-dark-background fitted" data-background-color="#cb3026" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 0.813rem;">
+        <figure style=""><img src="images/6087-04.jpg" class=" position-center-center"></figure>
+        <div style=""><h2 id="pipico2wspecs">Pi Pico 2W Specs</h2>
+
+<ul>
+<li>USB power + communication</li>
+<li>24 Digital pins (0–23)</li>
+<li>3 Analog pins (Pin 26-28)</li>
+<li>Onboard LED (<code class="hljs arduino"><span class="hljs-literal">LED_BUILTIN</span></code>)</li>
+<li>Reset button</li>
+<li>Microcontroller chip</li>
+<li>Wi-Fi (2.4 GHz) &amp; Bluetooth</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-background-color="#c23e29" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><ul>
+<li>Power via <strong>USB</strong> or <strong>external power supply</strong></li>
+<li>Connect to laptop → first time nothing happens</li>
+<li>But it's ready for communication</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-background-color="#ba4c2c" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 class="kicker" id="part2">Part 2</h3><h2 id="thetechtranslation">The Tech Translation</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-background-color="#b25b30" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 class="kicker" id="thechainofcommand:"><em>The chain of command:</em></h3><h2 id="intent-ide-board-reality">Intent -&gt; IDE -&gt; Board -&gt; Reality</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present has-dark-background fitted" data-background-color="#c16540" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Screenshot%202026-04-29%20at%2008.12.35.png" class=" size-contain position-center-center"></figure>
+        <div style=""><h1 id="arduinoide">Arduino IDE</h1>
+
+<p>The Translator</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-light-background fitted" data-background-color="#d07051" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><pre><code class="cpp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">pinMode</span>(LED_BUILTIN, OUTPUT);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">digitalWrite</span>(LED_BUILTIN, HIGH);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+  <span class="hljs-built_in">digitalWrite</span>(LED_BUILTIN, LOW);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+}
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present fit-warning has-light-background fitted" data-background-color="#e07b63" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 0.719rem;">
+        <div style=""><h2 id="codeanatomy–timerhythm">Code Anatomy – Time &amp; Rhythm</h2>
+
+<table>
+<colgroup>
+<col style="text-align:left;">
+<col style="text-align:left;">
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Function</th>
+	<th style="text-align:left;">Purpose</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">setup</span><span class="hljs-params">()</span></span></code></td>
+	<td style="text-align:left;">Runs once at the beginning (waking up)</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">loop</span><span class="hljs-params">()</span></span></code></td>
+	<td style="text-align:left;">Repeats forever (Breathing)</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">digitalWrite</span><span class="hljs-params">()</span></span></code></td>
+	<td style="text-align:left;">Sets voltage HIGH or LOW</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">delay</span><span class="hljs-params">()</span></span></code></td>
+	<td style="text-align:left;">Pauses for a given time (milliseconds)</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#e28955" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/RP-008305-DS-1-pico-2-w-pinout.pdf" class=" position-center-center"></figure>
+        <div style=""><h1 id="theboard–bridgingcodeandphysics">The Board – Bridging Code and Physics</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark full-image-container responsive present has-light-background fitted" data-background-color="#e49747" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/breadboard_internal.webp" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-light-background fitted" data-background-color="#e6a63a" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><figure><img src="images/pico-2-rp2350-with-external-led.png" class=" position-center-center"></figure></div>
+
+<h2 id="theconceptofacircuit:">The Concept of a Circuit:</h2>
+
+<p>Electricity must flow in a circle. </p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-light-background fitted" data-background-color="#d8ab3c" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.813rem;">
+        <div style=""><pre><code class="cpp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">pinMode</span>(LED_BUILTIN, OUTPUT);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">digitalWrite</span>(LED_BUILTIN, HIGH);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+  <span class="hljs-built_in">digitalWrite</span>(LED_BUILTIN, LOW);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+}
+</code></pre>
+
+<h2 id="blinkinganled">Blinking an LED</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#cab03e" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="digitalvsanalog">Digital vs Analog</h2></div>
+        <div style=""><p><strong>Digital</strong> </p>
+
+<ul>
+<li>Two states: <strong>HIGH / LOW</strong></li>
+<li>Example: button pressed or not</li>
+</ul>
+
+<p><strong>Analog</strong> </p>
+
+<ul>
+<li>Continuous range of values</li>
+<li>Example: potentiometer or light sensor</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-light-background fitted" data-background-color="#bcb540" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><table>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+
+<thead>
+<tr>
+	<th>Signal Type</th>
+	<th>Range</th>
+	<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>Digital</td>
+	<td>0 or 1</td>
+	<td>Button</td>
+</tr>
+<tr>
+	<td>Analog</td>
+	<td>0–1023</td>
+	<td>Potentiometer</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-light-background fitted" data-background-color="#9aad45" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="mappinginputtooutput">Mapping Input to Output</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present fit-warning has-light-background fitted" data-background-color="#79a64b" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.531rem;">
+        <div style=""><pre><code class="cpp hljs"><span class="hljs-keyword">int</span> ledPin = <span class="hljs-number">15</span>;
+<span class="hljs-keyword">int</span> potPin = <span class="hljs-number">26</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">pinMode</span>(ledPin, OUTPUT);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">int</span> sensorValue = <span class="hljs-built_in">analogRead</span>(potPin);   <span class="hljs-comment">// expect 0..1023</span>
+  <span class="hljs-keyword">int</span> delayTime = <span class="hljs-built_in">map</span>(sensorValue, <span class="hljs-number">0</span>, <span class="hljs-number">1023</span>, <span class="hljs-number">50</span>, <span class="hljs-number">1000</span>); <span class="hljs-comment">// 50..1000 ms</span>
+  <span class="hljs-built_in">digitalWrite</span>(ledPin, HIGH);
+  <span class="hljs-built_in">delay</span>(delayTime);
+  <span class="hljs-built_in">digitalWrite</span>(ledPin, LOW);
+  <span class="hljs-built_in">delay</span>(delayTime);
+}
+</code></pre>
+
+<h2 id="changeledblinkingbyphysicalinput">Change LED blinking by physical input</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#599f51" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="reflection">Reflection</h2></div>
+        <div style=""><ul>
+<li>What can we express with rhythm, timing, or response?</li>
+<li>How does behaviour become a design material?</li>
+<li>How could sound, light, or motion become part of a conversation between a human and an object?</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-light-background fitted" data-background-color="#55a268" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><blockquote class="is-single-quote"><div class="line"></div>
+<p>“Arduino lets us think through materials — not just their form, but their behaviour.”</p>
+<div class="line"></div></blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present fit-warning has-light-background fitted" data-background-color="#51a580" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.672rem;">
+        <div style=""><h2 id="summary:coreconcepts">Summary: Core Concepts</h2></div>
+        <div style=""><table>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+
+<thead>
+<tr>
+	<th>Concept</th>
+	<th>Description</th>
+	<th>Artistic Relevance</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>Microcontroller</td>
+	<td>Small computer on a board</td>
+	<td>Makes materials behave</td>
+</tr>
+<tr>
+	<td>Setup/Loop</td>
+	<td>Structure of temporal logic</td>
+	<td>Defines rhythm and flow</td>
+</tr>
+<tr>
+	<td>Digital/Analog</td>
+	<td>Binary vs continuous</td>
+	<td>Affects expressive resolution</td>
+</tr>
+<tr>
+	<td>Input/Output</td>
+	<td>Sense and respond</td>
+	<td>Enables interaction</td>
+</tr>
+<tr>
+	<td>Serial Monitor</td>
+	<td>Text bridge to computer</td>
+	<td>Data as creative material</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-light-background fitted" data-background-color="#4ea998" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><blockquote class="is-single-quote"><div class="line"></div>
+<p>“In new media art, Arduino is not a tool for technology, it’s a medium for expression, behaviour, and time.”</p>
+<div class="line"></div></blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section></div>
+</div>
+<script src="engine/index.js"></script>
+<script src="engine/pptxgen.min.js"></script>
+<script src="engine/pfill.js"></script>
+<script src="engine/published.js"></script>
+<script>
+Reveal.configure({
+progress:true,
+progress:true,
+dependencies: [
+  {
+    src: "engine/highlight.js",
+    sync: true,
+    callback: function () {
+      hljs.initHighlightingOnLoad();
+    },
+  },
+],
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1" />
+<link rel="stylesheet" href="engine/main.css">
+<link rel="stylesheet" href="theme/tokyo.css">
+<link rel="stylesheet" href="engine/katex/katex.min.css">
+<style>
+:root{
+--logo: ;
+--darkaccent1color: ;
+--lightaccent1color: ;
+--accent2: #43aa8b;
+--accent3: #f9c74f;
+--accent4: #90be6d;
+--accent5: #f8961e;
+--accent6: #577590;
+--lighttitletextcolor: #ffffff;
+--darktitletextcolor: #000000;
+--lightbodytextcolor: #ffffff;
+--darkbodytextcolor: #000000;
+--lightbackgroundcolor: #ffffff00;
+--darkbackgroundcolor: transparent;
+--bodyfont: system-ui;
+--titlefont: system-ui;
+--lightframecolor: #FFFFFF;
+--darkframecolor: #000000;
+} 
+
+</style>
+</head>
+<body class="responsive">
+<div class="reveal">
+<div class="slides">
+<section class="variable-size-headings light cover-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 0.859rem;">
+        <div style=""><h1 id="fromelectronstoexpression">From Electrons to Expression</h1>
+
+<h3 id="understandinganaloganddigitalsignalsthroughmaterialbehavior">Understanding Analog and Digital Signals through Material Behavior</h3>
+
+<p>How to Make Mechanisms of Control - 06. May. 2026</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present fit-warning fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.719rem;">
+        <div style=""><h2 id="overview">Overview</h2></div>
+        <div style=""><table>
+<colgroup>
+<col>
+<col>
+</colgroup>
+
+<thead>
+<tr>
+	<th>Segment</th>
+	<th>Focus</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>1. Electric Matter</td>
+	<td>How electrons move — voltage, current, resistance</td>
+</tr>
+<tr>
+	<td>2. Shaping Flow</td>
+	<td>Components as sculptors of flow</td>
+</tr>
+<tr>
+	<td>3. Continuity vs. Discreteness</td>
+	<td>Analog vs digital thinking</td>
+</tr>
+<tr>
+	<td>4. Translator Machines</td>
+	<td>ADCs, DACs, and sampling</td>
+</tr>
+<tr>
+	<td>5. Artistic Reflection</td>
+	<td>Resolution, time, and perception</td>
+</tr>
+<tr>
+	<td>6. Exploration</td>
+	<td>Material &amp; signal experiments</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light cover-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="1.electricmatter">1. Electric Matter</h1>
+
+<h2 id="—whatactuallymoves">— What Actually Moves</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/wiring_led.webp" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="electricityasmaterialflow">Electricity as Material Flow</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Electricty.jpg" class=" size-contain position-left-center"></figure>
+        <div style=""><ul>
+<li><strong>Electrons drift</strong> through conductors.</li>
+<li><strong>Voltage = pressure difference</strong> between two points.</li>
+<li><strong>Current = flow of charge</strong> through a path.</li>
+<li><strong>Resistance = friction</strong> against movement.</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Sparkfun_Atom.png" class=" size-contain position-left-center"><figcaption> Sparkfun - What is Electricity</figcaption></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/ConductorInsulatorSemi%20Conductor.png" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/CU%20Gif.gif" class=" size-contain position-center-center"></figure>
+        <div style=""><p>1st shell = 2 electrons</p>
+
+<p>2nd shell = 8 electrons</p>
+
+<p>3rd shell = 18 electrons</p>
+
+<p>4th 1 electrons &gt; valence electron</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/CU%20Gif-2.gif" class=" size-contain position-left-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Real%20Flow%20of%20Charge.gif" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Electricty.jpg" class=" size-contain position-left-center"></figure>
+        <div style=""><ul>
+<li><strong>Electrons drift</strong> through conductors.</li>
+<li><strong>Voltage = pressure difference</strong> between two points.</li>
+<li><strong>Current = flow of charge</strong> through a path.</li>
+<li><strong>Resistance = friction</strong> against movement.</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Electricty.jpg" class=" size-contain position-left-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Electricty.jpg" class=" size-contain position-left-center"></figure>
+        <div style=""><ul>
+<li>Volt = Joules / Coulomb</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Electricty.jpg" class=" size-contain position-left-center"></figure>
+        <div style=""><ul>
+<li>Volt = Joules / Coulomb</li>
+<li>1 Amp = 1 Coulomb / Second</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Electricty.jpg" class=" size-contain position-left-center"></figure>
+        <div style=""><ul>
+<li>Volt = Joules / Coulomb</li>
+<li>1 Amp = 1 Coulomb / Second</li>
+<li>Watt = 1 Joule / Second</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Electricty.jpg" class=" size-contain position-left-center"></figure>
+        <div style=""><ul>
+<li>Volt = Joules / Coulomb</li>
+<li>1 Amp = 1 Coulomb / Second</li>
+<li>Watt = 1 Joule / Second</li>
+<li>Ohm = Volts / Current</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="ohmslaw">Ohm's Law</h1>
+
+<p style="width: 100%;"><span class="math katex-rendered"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mo>∗</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">V=I*R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.2222em;">V</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0785em;">I</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0077em;">R</span></span></span></span></span></span></p></div>
+        <div style=""><pre><code class="hljs ini">
+<span class="hljs-attr">V</span> = Voltage (measure in volts)
+
+
+
+<span class="hljs-attr">I</span> = Current (measure in amps)
+
+
+
+<span class="hljs-attr">R</span> = Restistance (measure in ohms)
+
+
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><p style="width: 100%;"><span class="math katex-rendered"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mo>∗</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">V=I*R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.2222em;">V</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0785em;">I</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0077em;">R</span></span></span></span></span></span></p>
+
+<p style="width: 100%;"><span class="math katex-rendered"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo>=</mo><mi>V</mi><mi mathvariant="normal">/</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">I = V/R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0785em;">I</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.2222em;">V</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right: 0.0077em;">R</span></span></span></span></span></span></p>
+
+<p style="width: 100%;"><span class="math katex-rendered"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>R</mi><mo>=</mo><mi>V</mi><mi mathvariant="normal">/</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">R=V/I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0077em;">R</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.2222em;">V</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right: 0.0785em;">I</span></span></span></span></span></span></p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><p style="width: 100%;"><span class="math katex-rendered"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo>=</mo><mi>V</mi><mi mathvariant="normal">/</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">I = V/R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0785em;">I</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.2222em;">V</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right: 0.0077em;">R</span></span></span></span></span></span></p>
+
+<p style="width: 100%;"><span class="math katex-rendered"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo>=</mo><mn>5</mn><mi>V</mi><mi mathvariant="normal">/</mi><mn>220</mn><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">I = 5V / 220Ω</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0785em;">I</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">5</span><span class="mord mathnormal" style="margin-right: 0.2222em;">V</span><span class="mord">/220Ω</span></span></span></span></span></span></p>
+
+<p style="width: 100%;"><span class="math katex-rendered"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo>=</mo><mo stretchy="false">?</mo><mo stretchy="false">?</mo><mo stretchy="false">?</mo></mrow><annotation encoding="application/x-tex">I = ???</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0785em;">I</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span></span><span class="base"><span class="strut" style="height: 0.6944em;"></span><span class="mclose">???</span></span></span></span></span></span></p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><p style="width: 100%;"><span class="math katex-rendered"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo>=</mo><mi>V</mi><mi mathvariant="normal">/</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">I = V/R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0785em;">I</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.2222em;">V</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right: 0.0077em;">R</span></span></span></span></span></span></p>
+
+<p style="width: 100%;"><span class="math katex-rendered"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo>=</mo><mn>5</mn><mi>V</mi><mi mathvariant="normal">/</mi><mn>220</mn><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">I = 5V / 220Ω</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0785em;">I</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">5</span><span class="mord mathnormal" style="margin-right: 0.2222em;">V</span><span class="mord">/220Ω</span></span></span></span></span></span></p>
+
+<p style="width: 100%;"><span class="math katex-rendered"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo>=</mo><mn>0.02</mn><mi>A</mi></mrow><annotation encoding="application/x-tex">I = 0.02A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0785em;">I</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord">0.02</span><span class="mord mathnormal">A</span></span></span></span></span></span></p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present fit-warning fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.578rem;">
+        <div style=""><h1 id="2.shapingflow—componentsassculptors">2. Shaping Flow — Components as Sculptors</h1></div>
+        <div style=""><table>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+
+<thead>
+<tr>
+	<th>Component</th>
+	<th>Function</th>
+	<th>Analogy</th>
+	<th>Artistic Quality</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>Resistor</td>
+	<td>Limits flow</td>
+	<td>Narrow pipe</td>
+	<td>Controls intensity</td>
+</tr>
+<tr>
+	<td>Capacitor</td>
+	<td>Stores charge</td>
+	<td>Elastic membrane</td>
+	<td>Timing, smoothing</td>
+</tr>
+<tr>
+	<td>Diode</td>
+	<td>One-way valve</td>
+	<td>Check valve</td>
+	<td>Directionality</td>
+</tr>
+<tr>
+	<td>Transistor</td>
+	<td>Controlled valve</td>
+	<td>Tap or gate</td>
+	<td>Dynamics &amp; amplification</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/wiring_led.webp" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/arduino-uno-led-resistor-circuit.jpg" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/pico-2-rp2350-with-external-led.png" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light grid-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 has-only-media media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/wiring_led.webp" class=" position-right-center"></figure><figure style=""><img src="images/arduino-uno-led-resistor-circuit.jpg" class=" position-center-center"></figure><figure style=""><img src="images/pico-2-rp2350-with-external-led.png" class=" position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Basic-electronics-components-with-symbol-.jpg" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/400px-LED_With_Schematic_Symbol_and_Labels.jpg" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light grid-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 " style="width: 100%; font-size: 0.813rem;">
+        <div style=""><h3 id="remember:"><em>Remember</em>:</h3></div><div style=""><h1 id="chargebehavesliketension.">Charge behaves like <mark>tension</mark>.</h1></div><div style=""><h1 id="energydoesn’tvanish—ittransforms.">Energy doesn’t vanish — <mark>it transforms</mark>.</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light cover-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><h1 id="3.fromcontinuitytodiscreteness">3. From Continuity to Discreteness</h1>
+
+<h2 id="aka.analogvsdigitalsignals">aka. Analog vs Digital Signals</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light cover-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="whatisasignal">What Is a Signal?</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/1_Analog.png" class=" position-center-center"></figure>
+        <figure style=""><img src="images/2_Digital.png" class=" position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><pre><code class="cpp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{ 
+Serial.<span class="hljs-built_in">begin</span>(<span class="hljs-number">9600</span>); 
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">int</span> sensorVal = <span class="hljs-built_in">analogRead</span>(A0);
+  Serial.<span class="hljs-built_in">println</span>(sensorVal);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">20</span>);
+}
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="analogsignals">Analog Signals</h3>
+<div class="single-image-wrapper"><figure><img src="images/1_Analog.png" class=" size-contain position-center-center"><figcaption> www.monolithicpower.com/</figcaption></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 0.859rem;">
+        <figure style=""><img src="images/1_Analog.png" class=" position-center-center"></figure>
+        <div style=""><h3 id="analogsignals">Analog Signals</h3>
+
+<p><strong>Characteristics:</strong></p>
+
+<ul>
+<li>Represent a continuous range of values (e.g. 0V to 5V)</li>
+<li>Can capture fine detail — like sound, light, or touch pressure</li>
+<li>Used by sensors like potentiometers, LDRs, and microphones</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 0.859rem;">
+        <figure style=""><img src="images/1_Analog.png" class=" position-center-center"></figure>
+        <div style=""><h3 id="analogsignals">Analog Signals</h3>
+
+<p><strong>Arduino Use:</strong></p>
+
+<ul>
+<li><p><strong>Read</strong>: </p>
+<code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">analogRead</span><span class="hljs-params">()</span></span></code> — returns 0 to 1023 (10-bit ADC)</li>
+<li><p><strong>Write</strong>: </p>
+<code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">analogWrite</span><span class="hljs-params">()</span></span></code> — actually uses PWM, not true analog</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="digitalsignals">Digital Signals</h3>
+<div class="single-image-wrapper"><figure><img src="images/2_Digital.png" class=" size-contain position-center-center"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="digitalsignals">Digital Signals</h3>
+
+<p><strong>Characteristics:</strong></p>
+
+<ul>
+<li>Only two states: ON (HIGH, 5V) or OFF (LOW, 0V)</li>
+<li>Clear, fast, and efficient — great for buttons, switches, logic</li>
+</ul></div>
+        <figure style=""><img src="images/2_Digital.png" class=" position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="digitalsignals">Digital Signals</h3>
+
+<p><strong>Arduino Use:</strong></p>
+
+<ul>
+<li><strong>Read:</strong> <code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">digitalRead</span><span class="hljs-params">()</span></span></code> checks if HIGH or LOW</li>
+<li><strong>Write:</strong> <code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">digitalWrite</span><span class="hljs-params">()</span></span></code> sets pin to HIGH or LOW</li>
+</ul></div>
+        <figure style=""><img src="images/2_Digital.png" class=" position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/1_Analog.png" class=" position-center-center"></figure>
+        <figure style=""><img src="images/2_Digital.png" class=" position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light cover-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="4.thetranslatormachines">4. The Translator Machines</h1>
+
+<h2 id="—adcdacsampling">— ADC, DAC, Sampling</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light title-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+        <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+        <div class="layout-title-image media-grid" style="width: 100%; font-size: 1rem;">
+          <div style=""><h4 id="insidethepico2w"><strong>Inside the Pico 2W</strong></h4></div>
+          <figure style=""><img src="images/6087-01.jpg" class=" position-center-center"></figure>
+        </div>
+        <div class="footnotes"></div>
+        <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.859rem;">
+        <div style=""><table>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+
+<thead>
+<tr>
+	<th>Signal Type</th>
+	<th>Input Example</th>
+	<th>Output Example</th>
+	<th>Pin Function</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>Digital</td>
+	<td>Button</td>
+	<td>LED ON/OFF</td>
+	<td><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">digitalRead</span><span class="hljs-params">()</span></span></code>, <code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">digitalWrite</span><span class="hljs-params">()</span></span></code></td>
+</tr>
+<tr>
+	<td>Analog</td>
+	<td>Potentiometer</td>
+	<td>LED Brightness</td>
+	<td><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">analogRead</span><span class="hljs-params">()</span></span></code>, <code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">analogWrite</span><span class="hljs-params">()</span></span></code></td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light title-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><hgroup><p class="kicker">To understand analog input and output we need to talk about</p>
+
+<h2 id="resolutionandtime">Resolution and Time</h2></hgroup></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/107335039-1700150135905-gettyimages-1405889487-_mg_7172.jpeg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light title-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="analogread"><code class="hljs abnf">analogRead()<span class="hljs-comment">;</span></code></h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light cover-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 class="kicker" id="analogtodigitalconversion">Analog to Digital Conversion</h3><h1 id="adc">ADC</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/sine-wave-analog-signal.jpg" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/sampling-sine-wave.jpg" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/sampling-information-loss.jpg.webp" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/20240812135029398.png" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.859rem;">
+        <div style=""><h4 id="readingananalogsignal">reading an analog signal</h4>
+
+<pre><code class="cpp hljs"><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> potPin = A0;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span></span>{ 
+Serial.<span class="hljs-built_in">begin</span>(<span class="hljs-number">115200</span>); 
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span></span>{
+  <span class="hljs-keyword">int</span> val = <span class="hljs-built_in">analogRead</span>(potPin);
+  Serial.<span class="hljs-built_in">println</span>(val);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">5</span>);  <span class="hljs-comment">// change to 10 or 1 ms to compare</span>
+}
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.813rem;">
+        <div style=""><h3 id="bridgephrases:">Bridge phrases:</h3></div>
+        <div style=""><h2 id="samplingisdecidingwhentolisten.">Sampling is deciding <mark>when</mark> to listen.</h2>
+
+<h2 id="bitdepthisthelevelofdetailinourhearing.">Bit depth is the <mark>level of detail</mark> in our hearing.</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light cover-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="pwm">PWM</h1>
+
+<h3 id="pulsewidthmodulation">Pulse Width Modulation</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Pinout-UNOrev3_latest.png" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/pico2w-pinout.svg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light cover-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="pwm">PWM =</h1>
+
+<h2 id="fakeanalogsignal">"Fake analog signal"</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="digitalsignals">Digital Signals</h3>
+<div class="single-image-wrapper"><figure><img src="images/2_Digital.png" class=" size-contain position-center-center"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/analog-vs-digital-signal.jpg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/PWM-signal-pulse-time-period.jpg.webp" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/PWM-different-duty-cycles-average-voltage.jpg.webp" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/PWM.gif" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light cover-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 class="kicker" id="digitaltoanalogconversion">Digital to Analog Conversion</h3><h1 id="dac">DAC</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/sampling-sine-wave.jpg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="whydoesthismatter">Why does this Matter?</h2></div>
+        <div style=""><h3 class="kicker" id="realworldisanalog"><strong>Real world is analog</strong>,</h3><h1 id="but"><strong>but</strong></h1>
+
+<h3 id="microcontrollersaredigitalthinkers"><strong>Microcontrollers are digital thinkers</strong></h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/sampling-sine-wave.jpg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/PWM-different-duty-cycles-average-voltage.jpg.webp" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light grid-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 media-grid" style="width: 100%; font-size: 0.859rem;">
+        <figure style=""><img src="images/pico2w-pinout.svg" class=" position-center-center"></figure><div style=""><p><strong>Takeaway: What's Inside the MCU?</strong></p></div><div style=""><ul>
+<li>Simplified model:</li>
+<li><strong>Analog Pins → ADC → Variables</strong></li>
+<li><strong>Digital Pins → Logic → Transistors</strong></li>
+<li><strong>PWM → Timer circuit → Output pin</strong></li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="understandingsignalsunderstandinghowyourcodetalkstothephysicalworld.">Understanding signals = understanding how your <mark>code talks</mark> to the <mark>physical world</mark>.</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fit-warning fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.719rem;">
+        <div style=""><h2 id="remember:">Remember:</h2></div>
+        <div style=""><h1 id="digitalcanmimicanalogbyrhythm.">Digital can <mark>mimic</mark> analog by <mark>rhythm</mark>.</h1>
+
+<h1 id="perceptionsmoothswhatmachinesstep.">Perception smooths what machines <em>step</em>.</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light cover-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="5.artisticreflection—resolutiontimeperception">5. Artistic Reflection — Resolution, Time, Perception</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><ol>
+<li>What happens when resolution is intentionally reduced?</li>
+<li>When does analog richness outweigh precision?</li>
+<li>How does sampling rate shape rhythm and response?</li>
+</ol></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light title-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="artexample:">Art example:</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light cover-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="zimoun—mechanicalanalognoise">Zimoun — mechanical analog noise</h1>
+
+<p>https://zimoun.net</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present fit-warning fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.766rem;">
+        <div style=""><h2 id="digitalisdeliberatereduction">Digital is deliberate reduction</h2></div>
+        <div style=""><h2 id="analogembracesunpredictability">Analog embraces unpredictability</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light cover-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="6.studentexploration">6. Student Exploration</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="closingthoughts">Closing Thoughts</h1></div>
+        <div style=""><ul>
+<li>How does thinking of electricity as <em>material flow</em> shift your design?</li>
+<li>What new artistic possibilities emerge from signal understanding?</li>
+<li>How can imperfections become aesthetics?</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><blockquote class="is-single-quote"><div class="line"></div>
+<p>“Electricity isn’t just a means — it’s a medium with texture, rhythm, and resistance.”</p>
+<div class="line"></div></blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light grid-container responsive present fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-0 has-only-media" style="width: 100%; font-size: 1rem;">
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section></div>
+</div>
+<script src="engine/index.js"></script>
+<script src="engine/pptxgen.min.js"></script>
+<script src="engine/pfill.js"></script>
+<script src="engine/published.js"></script>
+<script>
+Reveal.configure({
+progress:true,
+progress:true,
+dependencies: [
+  {
+    src: "engine/highlight.js",
+    sync: true,
+    callback: function () {
+      hljs.initHighlightingOnLoad();
+    },
+  },
+],
+});
+</script>
+</body>
+</html>
