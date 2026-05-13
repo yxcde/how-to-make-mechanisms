@@ -9,12 +9,17 @@ void setup() {
   // Analog input pins don't strictly need pinMode declaration, 
   // but good practice anyways
 
+  Serial.begin(9600);
+
 }
 
 void loop() {
   // Read the potentiometer (gives a number between 0 and 1023)
   int sensorValue = analogRead(potPin);
-  
+  Serial.println(0);
+  Serial.println(sensorValue);
+  Serial.println(1023);
+
   // Map the 10-bit analog read (0-1023) to 8-bit PWM (0-255)
   int brightness = map(sensorValue, 0, 1023, 0, 255);
   

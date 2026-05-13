@@ -3,7 +3,7 @@
 // Uses millis() for timing instead of delay()
 // LED toggles every 1000 ms (1 second)
 
-int ledPin = 13;      // Built-in LED on most Arduino boards
+int ledPin = ;      // Built-in LED on most Arduino boards
 unsigned long previousMillis = 0;  // Stores the last time the LED was toggled
 unsigned long interval = 1000; // Interval at which to blink (milliseconds)
 bool ledState = false;  // Tracks the current LED state
