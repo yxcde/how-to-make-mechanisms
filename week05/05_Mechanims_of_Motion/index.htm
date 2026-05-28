@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1" />
+<link rel="stylesheet" href="engine/main.css">
+<link rel="stylesheet" href="theme/tokyo.css">
+<link rel="stylesheet" href="engine/katex/katex.min.css">
+<style>
+:root{
+--logo: ;
+--darkaccent1color: ;
+--lightaccent1color: ;
+--accent2: #43aa8b;
+--accent3: #f9c74f;
+--accent4: #90be6d;
+--accent5: #f8961e;
+--accent6: #577590;
+--lighttitletextcolor: #ffffff;
+--darktitletextcolor: #000000;
+--lightbodytextcolor: #ffffff;
+--darkbodytextcolor: #000000;
+--lightbackgroundcolor: transparent;
+--darkbackgroundcolor: transparent;
+--bodyfont: system-ui;
+--titlefont: system-ui;
+--lightframecolor: #FFFFFF;
+--darkframecolor: #000000;
+} 
+
+</style>
+</head>
+<body class="responsive">
+<div class="reveal">
+<div class="slides">
+<section class="variable-size-headings dark cover-container responsive present has-light-background fitted" data-background-color="#4ea9e2" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h4 class="kicker" id="howtomakemechanismsofcontrol">How to Make Mechanisms of Control</h4><h1 id="mechanismsofmotion">Mechanisms of Motion</h1>
+
+<h3 id="fromcharactertokineticstructure">From Character to Kinetic Structure</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#4aa1db" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="todaywemovefrom:">Today we move from:</h2></div>
+        <div style=""><ul>
+<li>motion vocabulary</li>
+<li>servo gestures</li>
+<li>simple angular control</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#4699d5" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="toward:">toward:</h2></div>
+        <div style=""><ul>
+<li>mechanical translation</li>
+<li>stepper-driven rhythm</li>
+<li>3D-printed motion structures</li>
+<li>kinetic studies as design prototypes</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark section-container responsive present has-light-background fitted" data-background-color="#4291cf" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="howdoesanadjectivebecomeamechanism">How does an adjective become a mechanism?</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-dark-background fitted" data-background-color="#3e89c9" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="howdoesamachinemovewhenitis:">How does a machine move when it is:</h3></div>
+        <div style=""><ul>
+<li>hesitant?</li>
+<li>exhausted?</li>
+<li>alert?</li>
+<li>breathing?</li>
+<li>impatient?</li>
+<li>fragile?</li>
+<li>ritualistic?</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-dark-background fitted" data-background-color="#3a81c3" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="termsformotionconcepts">Terms for motion Concepts</h3>
+
+<ul>
+<li>rhythm</li>
+<li>acceleration</li>
+<li>pause</li>
+<li>reversal</li>
+<li>range</li>
+</ul></div>
+        <div style=""><ul>
+<li>repetition</li>
+<li>resistance</li>
+<li>weight</li>
+<li>friction</li>
+<li>material softness</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark section-container responsive present has-dark-background fitted" data-background-color="#3679bc" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="bytheendofthesessionyoushouldbeabletomovefrom:">By the end of the session, you should be able to move from:</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-background-color="#3271b6" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><blockquote class="is-single-quote"><div class="line"></div>
+<p>“I want it to move in a hesitant way.”</p>
+<div class="line"></div></blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-background-color="#3f71b5" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><blockquote class="is-single-quote"><div class="line"></div>
+<p>“I need small advances, pauses, reversals, low acceleration, uneven rhythm, and a cam profile that interrupts the follower motion.”</p>
+<div class="line"></div></blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present fit-warning has-dark-background fitted" data-background-color="#4d72b5" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.625rem;">
+        <div style=""><h1 id="translationtable">Translation Table</h1></div>
+        <div style=""><table>
+<colgroup>
+<col>
+<col>
+</colgroup>
+
+<thead>
+<tr>
+	<th>Intention</th>
+	<th>Motion decisions</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>Hesitant</td>
+	<td>pauses, reversals, small advances, uneven timing</td>
+</tr>
+<tr>
+	<td>Exhausted</td>
+	<td>slow return, reduced range, sagging rhythm</td>
+</tr>
+<tr>
+	<td>Alert</td>
+	<td>sudden starts, sharp stops, scanning gestures</td>
+</tr>
+<tr>
+	<td>Breathing</td>
+	<td>cyclic expansion, soft acceleration, continuous return</td>
+</tr>
+<tr>
+	<td>Frantic</td>
+	<td>high frequency, irregular rhythm, abrupt reversals</td>
+</tr>
+<tr>
+	<td>Ritualistic</td>
+	<td>repetition, symmetry, slow inevitability</td>
+</tr>
+<tr>
+	<td>Fragile</td>
+	<td>limited range, careful acceleration, visible restraint</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark title-image-container responsive present has-dark-background fitted" data-background-color="#5c73b4" data-updated="true" style="display: grid;">
+
+        <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+        <div class="layout-title-image media-grid" style="width: 100%; font-size: 0.813rem;">
+          <div style=""><p><strong>Example:</strong> <em>Shylight</em> by Studio DRIFT<br>
+https://studiodrift.com/work/shylight/</p></div>
+          <figure style=""><img src="images/MKG_Drift_Moments_of_Connection_Shylight_8.jpg.webp" class=" position-center-top"></figure>
+        </div>
+        <div class="footnotes"></div>
+        <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-dark-background fitted" data-background-color="#6a74b4" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="velocitycurvesasemotionalstructure">Velocity curves as emotional structure</h3></div>
+        <div style=""><p>The work uses <mark>falling, catching, blooming, and retracting</mark> motions. </p>
+
+<p>The emotional quality comes from the <mark>timing</mark> and <mark>velocity curve</mark> as much as from the <mark>object</mark>.</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-dark-background fitted" data-background-color="#7975b3" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><ul>
+<li>falling versus controlled descent</li>
+<li>acceleration and catching</li>
+<li>theatrical timing</li>
+<li>gravity as collaborator</li>
+<li>how the same object would feel different with linear speed</li>
+</ul></div>
+        <div style=""><h3 id="aspectstopayattentionto">Aspects to pay attention to</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark caption-container responsive present fit-warning has-light-background fitted" data-background-color="#8775b3" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-caption media-grid" style="width: 100%; font-size: 0.672rem;">
+        <figure style=""><img src="images/moving_objects_n_1703_1750_1.jpg" class=" position-center-center"></figure>
+        <div style=""><p><strong>Example:</strong> <em>moving objects | nº 1703 - 1750</em> by Pe Lang</p>
+
+<p>https://www.pelang.ch/works.html</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#9676b3" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="precisionrepetitionandrestraint">Precision, repetition, and restraint</h3></div>
+        <div style=""><p>Minimal mechanical <mark>arrangements</mark> produce complex visual behaviour through <mark>repetition, alignment, and precision</mark>.</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#9f6eaa" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><ul>
+<li>small motors as repeated units</li>
+<li>grids and fields</li>
+<li>synchronisation</li>
+<li>phase</li>
+<li>minimal material means</li>
+</ul></div>
+        <div style=""><h3 id="aspectstopayattentionto">Aspects to pay attention to</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark full-image-container responsive present has-dark-background fitted" data-background-color="#a764a0" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="Sg2U29Alfuc" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/Sg2U29Alfuc/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-dark-background fitted" data-background-color="#af5a96" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="motionasmechanicalpoetry">Motion as mechanical poetry</h2></div>
+        <div style=""><p>Motion can <mark>feel fragile, absurd, futile, careful</mark>, or lyrical depending on <mark>mechanism, speed, and material</mark>.</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark cover-container responsive present has-dark-background fitted" data-background-color="#b74f8c" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="mechanicalthinking">Mechanical Thinking</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark full-image-container responsive present has-dark-background fitted" data-background-color="#bf4582" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="JOLtS4VUcvQ" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/JOLtS4VUcvQ/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark section-container responsive present has-dark-background fitted" data-background-color="#c73b78" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="amotorrarelycreatesthefinalmotiondirectly">A motor rarely creates the final motion directly</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-background-color="#cf316e" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 class="kicker" id="butbefore">But before</h3><h2 id="shortsidequest">Short <em>sidequest</em></h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark cover-container responsive present has-dark-background fitted" data-background-color="#d12e64" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 class="kicker" id="outputdevices:">Output Devices:</h3><h1 id="motors">Motors</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-background-color="#d02e5a" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="whatareactuators">What Are Actuators?</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark section-container responsive present has-dark-background fitted" data-background-color="#cf2e50" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="devicesthatconvertelectricalenergyintomotion">Devices that convert electrical energy into motion</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-background-color="#ce2f47" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><h2 id="keyparametersformotors:">Key parameters for motors:</h2>
+
+<ul>
+<li>Type of motion: continuous, steps, limited angle</li>
+<li>Torque</li>
+<li>Speed</li>
+<li>(Power)</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark cover-container responsive present has-dark-background fitted" data-background-color="#cd2f3d" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="commonactuators:">Common actuators:</h1>
+
+<p><strong>DC Motors</strong></p>
+
+<p><strong>Stepper Motors</strong></p>
+
+<p><strong>Servo Motors</strong></p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark full-image-container responsive present has-dark-background fitted" data-background-color="#cc2f33" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/components_IMG_4846.jpg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark grid-container responsive present has-dark-background fitted" data-background-color="#cb2f29" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 media-grid" style="width: 100%; font-size: 0.953rem;">
+        <figure style=""><img src="images/components_IMG_4848.jpg" class=" position-center-center"></figure><div style=""><h2 id="dcmotors">DC Motors</h2></div><div style=""><p>DC Motors – Fast and Simple </p>
+
+<ul>
+<li>Continuous rotation</li>
+<li>Speed controlled by PWM</li>
+<li>No position feedback (unless we add encoders)</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-dark-background fitted" data-background-color="#c83326" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.813rem;">
+        <div style=""><h2 id="dcmotors">DC Motors</h2>
+
+<p><strong>Key Specs:</strong> </p>
+
+<ul>
+<li>Voltage rating (usually 3–12V)</li>
+<li>Current draw (check datasheet)</li>
+<li>Torque: low to moderate</li>
+<li>Control:
+
+<ul>
+<li>Small motors directly from Arduino</li>
+<li>All others: <strong>H-bridge</strong> (e.g. L298N, DRV8871)</li>
+</ul></li>
+</ul></div>
+        <div style=""><p><strong>Pros:</strong> Simple and cheap<br>
+<strong>Cons:</strong> No positional control, torque drops at low speed</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark full-image-container responsive present has-dark-background fitted" data-background-color="#c53928" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Polulu_Motors.png" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark full-image-container responsive present has-dark-background fitted" data-background-color="#c13f29" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Polulu_DC_Drivers.png" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-background-color="#be452b" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><figure><img src="images/components_IMG_4810_crop.jpg" class=" size-contain position-center-center"></figure></div>
+
+<h2 id="steppermotors">Stepper Motors</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-background-color="#ba4b2c" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="steppermotors">Stepper Motors</h2>
+
+<h3 id="precisemotion">Precise Motion</h3>
+
+<ul>
+<li>Moves in discrete steps (e.g. 200 steps/rev)</li>
+<li>Good for precise positioning</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present fit-warning has-dark-background fitted" data-background-color="#b7512d" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.766rem;">
+        <div style=""><h2 id="steppermotors">Stepper Motors</h2></div>
+        <div style=""><p><strong>Key Specs:</strong> </p>
+
+<ul>
+<li>Voltage + current per coil</li>
+<li>Holding torque</li>
+<li>Step angle</li>
+<li>Bipolar vs. unipolar</li>
+</ul>
+
+<p><strong>Driver Examples:</strong> </p>
+
+<ul>
+<li>A4988, DRV8825, TMC2209</li>
+<li>Needs step and direction signals</li>
+</ul>
+
+<p><strong>Pros:</strong> Precise, good torque at low speed<br>
+<strong>Cons:</strong> Can skip steps under load, no feedback by default</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark full-image-container responsive present has-dark-background fitted" data-background-color="#b3572f" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Stepper_OMC.png" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark full-image-container responsive present has-dark-background fitted" data-background-color="#b55d33" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Stepper_Nanotec.png" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark full-image-container responsive present has-dark-background fitted" data-background-color="#bb613a" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Polulu_Stepper_Drivers.png" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-dark-background fitted" data-background-color="#c26641" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/components_IMG_4855.jpg" class=" position-center-center"></figure>
+        <div style=""><h2 id="servomotors">Servo Motors</h2>
+
+<p>Angle Control Made Easy</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present fit-warning has-light-background fitted" data-background-color="#c86a49" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.672rem;">
+        <div style=""><h2 id="servomotors">Servo Motors</h2></div>
+        <div style=""><ul>
+<li>Typically 0–180° movement</li>
+<li>Controlled by PWM (1–2 ms pulse)</li>
+</ul>
+
+<p><strong>Types:</strong> </p>
+
+<ul>
+<li>Micro servos (SG90)</li>
+<li>Standard servos (MG996R)</li>
+<li>Continuous rotation servos</li>
+</ul>
+
+<p><strong>Specs to Check:</strong> </p>
+
+<ul>
+<li>Operating voltage (5–6V)</li>
+<li>Stall torque</li>
+<li>Speed (e.g. 0.12s/60°)</li>
+</ul>
+
+<p><strong>Pros:</strong> Easy to use, position control<br>
+<strong>Cons:</strong> Limited rotation range, not very strong</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#cf6f50" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><h2 id="howtochoosetherightmotor">How to Choose the Right Motor</h2></div>
+        <div style=""><table>
+<colgroup>
+<col>
+<col>
+</colgroup>
+
+<thead>
+<tr>
+	<th>Task</th>
+	<th>Motor Type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>Rotate wheels</td>
+	<td>DC or Continuous Servo</td>
+</tr>
+<tr>
+	<td>Rotate arm precisely</td>
+	<td>Servo or Stepper</td>
+</tr>
+<tr>
+	<td>Position system in discrete steps</td>
+	<td>Stepper</td>
+</tr>
+<tr>
+	<td>Simple movement, low cost</td>
+	<td>DC</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present fit-warning has-light-background fitted" data-background-color="#d57357" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.766rem;">
+        <div style=""><h2 id="questionstoaskyourselfwhenchoosingamotor">Questions to ask yourself when choosing a motor</h2>
+
+<ul>
+<li>Required torque</li>
+<li>Speed vs. precision</li>
+<li>Power source (battery vs wall)</li>
+<li>Controller hardware</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present fit-warning has-light-background fitted" data-background-color="#dc785e" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.672rem;">
+        <div style=""><h2 id="powerdrivingconsiderations">Power &amp; Driving Considerations</h2></div>
+        <div style=""><h3 id="drivingmotorssafely">Driving Motors Safely</h3>
+
+<ul>
+<li><strong>Never power motors directly from Arduino!</strong></li>
+<li>Use external power + common ground</li>
+<li>Use:
+
+<ul>
+<li>H-bridges (DC)</li>
+<li>Stepper drivers (stepper)</li>
+<li>PWM pins (servo)</li>
+</ul></li>
+</ul>
+
+<p><strong>Check:</strong></p>
+
+<ul>
+<li>Stall current or torque</li>
+<li>Required power: <code class="hljs ini"><span class="hljs-attr">P</span> = V × I</code></li>
+<li>Use capacitors to avoid voltage dips</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-light-background fitted" data-background-color="#e07d60" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><blockquote class="is-single-quote"><div class="line"></div>
+<p>Sidequest over</p>
+<div class="line"></div></blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark section-container responsive present has-light-background fitted" data-background-color="#e1835a" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="themotorprovidesenergyandtiming.">The motor provides <mark>energy and timing</mark>.</h3>
+
+<h3 id="themechanismgivesthatmotioncharacter.">The mechanism gives that <mark>motion character</mark>.</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark grid-container responsive present has-light-background fitted" data-background-color="#e28955" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-4 " style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h3 id="fourbasicmechanicaltranslations">Four Basic Mechanical Translations</h3>
+
+<ol>
+<li><p>Rotation → rotation</p>
+Gears, pulleys, belts, turntables</li>
+</ol></div><div style=""><ol>
+<li><p>Rotation → linear motion</p>
+Cams, crank-sliders, rack and pinion, lead screws</li>
+</ol></div><div style=""><ol>
+<li><p>Rotation → oscillation</p>
+Cranks, eccentric wheels, linkages</li>
+</ol></div><div style=""><ol>
+<li><p>Many small motions → collective behaviour</p>
+Arrays of motors, flaps, strings, mirrors, reeds</li>
+</ol></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark caption-container responsive present fit-warning has-light-background fitted" data-background-color="#e28f4f" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-caption media-grid" style="width: 100%; font-size: 0.672rem;">
+        <figure style=""><img src="images/front_kopie_ade1a7e616.jpg" class=" position-center-center"></figure>
+        <div style=""><p><strong>Example:</strong> <em>Strandbeests</em> by Theo Jansen</p>
+
+<p>https://www.strandbeest.com/</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#e39549" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><h2 id="linkagesandmechanicaltranslation">Linkages and mechanical translation</h2></div>
+        <div style=""><p>Walking behaviour emerges from <mark>linked geometries</mark> and <mark>repeated mechanical relationships</mark>.</p>
+
+<ul>
+<li>rotation translated into walking</li>
+<li>repeated leg structures</li>
+<li>constraint as source of behaviour</li>
+<li>mechanical anatomy</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark full-image-container responsive present has-light-background fitted" data-background-color="#e49b43" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="bg0KdglaOv0" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/bg0KdglaOv0/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#e5a13e" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><h2 id="onedrivermanymotions">One driver, many motions</h2></div>
+        <div style=""><p>A single or limited drive system can generate complex spatial motion through strings, <mark>phase offsets, and repeated relationships</mark>.</p>
+
+<ul>
+<li>wave motion</li>
+<li>collective behaviour</li>
+<li>phase shifts</li>
+<li>mechanical drawing in space</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark full-image-container responsive present has-light-background fitted" data-background-color="#e4a63a" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="Z-5cVpWhp30" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/Z-5cVpWhp30/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#dea83b" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="physicalpixelsandresponsivesurfaces">Physical pixels and responsive surfaces</h2></div>
+        <div style=""><p>A sensor input is translated into many small physical movements, producing a responsive image.</p>
+
+<ul>
+<li>camera input</li>
+<li>physical resolution</li>
+<li>material pixels</li>
+<li>actuation as image-making</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark full-image-container responsive present has-light-background fitted" data-background-color="#d8aa3b" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="jOzRwI47eNc" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/jOzRwI47eNc/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark grid-container responsive present has-light-background fitted" data-background-color="#d2ac3c" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 " style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="repetitionlow-techmotorsacousticconsequences">Repetition, low-tech motors, acoustic consequences</h2></div><div style=""><p>Small <mark>repeated</mark> mechanical actions <mark>become spatial, visual, and sonic fields</mark>.</p></div><div style=""><ul>
+<li>repetition</li>
+<li>accumulation</li>
+<li>cardboard, wire, motors</li>
+<li>sound as consequence of movement</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark grid-container responsive present has-light-background fitted" data-background-color="#ccaf3d" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-0 has-only-media" style="width: 100%; font-size: 1rem;">
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#c6b13e" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="steppermotors">Stepper Motors</h2>
+
+<h3 id="countablemotion">Countable motion</h3></div>
+        <div style=""><table>
+<colgroup>
+<col>
+<col>
+</colgroup>
+
+<thead>
+<tr>
+	<th>Motor type</th>
+	<th>Useful for</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>Servo</td>
+	<td>simple angular gestures</td>
+</tr>
+<tr>
+	<td>DC motor</td>
+	<td>continuous spinning</td>
+</tr>
+<tr>
+	<td>Stepper</td>
+	<td>countable, repeatable, controlled rotation</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#c0b33f" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h2 id="forstepperstakeintoaccount:">For steppers take into account:</h2></div>
+        <div style=""><ul>
+<li>step count</li>
+<li>direction</li>
+<li>speed</li>
+<li>torque</li>
+<li>driver boards</li>
+<li>external power</li>
+</ul>
+
+<p><strong>Important warning:</strong></p>
+
+<p>Stepper motors should not be powered directly from the microcontroller.</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#b9b440" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="steppermotorasrhythmtool">Stepper Motor as Rhythm Tool</h2>
+
+<p>A stepper is useful when motion needs to be:</p></div>
+        <div style=""><ul>
+<li>repeatable</li>
+<li>countable/quantifiable</li>
+<li>slow and controlled</li>
+<li>rhythmically structured</li>
+<li>mechanically coupled to another object</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark section-container responsive present has-light-background fitted" data-background-color="#abb142" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="stepperandservocomparison:">Stepper and Servo comparison:</h3>
+
+<p>Servo = <em>go to this angle.</em></p>
+
+<p>Stepper = <em>move this many steps through this rhythm.</em></p>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark cover-container responsive present has-light-background fitted" data-background-color="#9dae45" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="charactermachinetask">Character Machine Task</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#8fab47" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.813rem;">
+        <div style=""><h2 id="buildakineticstudy">Build a kinetic study</h2>
+
+<p>Create a small stepper-driven cam mechanism that expresses one chosen movement character.</p>
+
+<p>You must combine:</p>
+
+<ol>
+<li>a motion profile in code</li>
+<li>a motion profile in matter</li>
+<li>a visible output</li>
+</ol></div>
+        <div style=""><p><strong>Output could be:</strong></p>
+
+<ul>
+<li>cardboard arm</li>
+<li>paper flag</li>
+<li>hanging string</li>
+<li>small object</li>
+<li>drawing tool</li>
+<li>shadow-casting element</li>
+<li><p>sound-making material</p>
+<strong>Emphasise</strong> “study,” not finished artwork.</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#81a74a" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><h4 class="kicker" id="studioworkflow">Studio Workflow</h4><h3 id="adjective→motionscore→mechanism→test">Adjective → Motion Score → Mechanism → Test</h3></div>
+        <div style=""><ol>
+<li>Choose a movement character</li>
+<li>Write a short motion score</li>
+<li>Choose or modify a cam shape</li>
+<li>Print the cam</li>
+<li>Code the stepper motion</li>
+<li>Assemble follower and output</li>
+<li>Test and adjust</li>
+</ol></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#73a44c" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 class="kicker" id="readingmotion">Reading Motion</h3><h2 id="whatisthemotionsaying">What is the motion saying?</h2></div>
+        <div style=""><ol>
+<li>What character do we read?</li>
+<li>Where does that reading come from?</li>
+<li>What one adjustment would strengthen it?</li>
+</ol></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#65a14e" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="critiquelanguage">Critique Language</h2>
+
+<p>Instead of:</p>
+
+<blockquote>
+<p>“It works.”</p>
+</blockquote></div>
+        <div style=""><p>Ask:</p>
+
+<blockquote>
+<p>“What is the movement communicating?”<br>
+“Which decision produces that reading?”<br>
+“What would change if the cam were softer, sharper, slower, or less regular?”</p>
+</blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark cover-container responsive present has-light-background fitted" data-background-color="#589f52" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="exercise1:heartbeat">Exercise 1: Heartbeat</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark grid-container responsive present has-light-background fitted" data-background-color="#57a05b" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 " style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h2 id="provethatthemotorworks">Prove that the motor works</h2></div><div style=""><p>Basic test:</p>
+
+<ol>
+<li>move half a turn forward</li>
+<li>pause</li>
+<li>move half a turn backwards</li>
+<li>pause</li>
+</ol></div><div style=""><p>Goal:</p>
+
+<ul>
+<li>confirm wiring</li>
+<li>confirm direction</li>
+<li>understand step count</li>
+<li>establish a simple time structure</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark cover-container responsive present has-light-background fitted" data-background-color="#55a166" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="exercise2:motionphrase">Exercise 2: Motion Phrase</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark grid-container responsive present fit-warning has-light-background fitted" data-background-color="#54a36f" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 " style="width: 100%; font-size: 0.672rem;">
+        <div style=""><h2 id="writemovementasaphrase">Write movement as a phrase</h2></div><div style=""><p>Example:</p>
+
+<blockquote>
+<p>creep → pause → retreat → rush → rest</p>
+</blockquote></div><div style=""><p>The phrase should define:</p>
+
+<ul>
+<li>speed</li>
+<li>acceleration</li>
+<li>direction</li>
+<li>range</li>
+<li>pause</li>
+<li>repetition</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#52a479" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><h1 id="exercise3:adjectiveprofile">Exercise 3: Adjective Profile</h1>
+
+<p>Choose one adjective and define its motion parameters.</p></div>
+        <div style=""><table>
+<colgroup>
+<col>
+<col>
+</colgroup>
+
+<thead>
+<tr>
+	<th>Parameter</th>
+	<th>Choice</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>Speed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>Acceleration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>Range</td>
+	<td></td>
+</tr>
+<tr>
+	<td>Rhythm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>Direction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>Rest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>Irregularity</td>
+	<td></td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#51a684" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="possibleadjectives:">Possible adjectives:</h3>
+
+<ul>
+<li>hesitant</li>
+<li>breathing</li>
+<li>limping</li>
+<li>impatient</li>
+</ul></div>
+        <div style=""><ul>
+<li>exhausted</li>
+<li>fragile</li>
+<li>ritualistic</li>
+<li>unstable</li>
+<li>watchful</li>
+<li>collapsing</li>
+<li>recovering</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present has-light-background fitted" data-background-color="#4fa78d" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><h3 class="kicker" id="closingthought"><em>Closing Thought</em></h3><h2 id="motionisaconstructedrelationship">Motion is a constructed relationship</h2></div>
+        <div style=""><p>A kinetic work is shaped by:</p>
+
+<ul>
+<li>timing</li>
+<li>mechanism</li>
+<li>material</li>
+<li>force</li>
+<li>constraint</li>
+<li>repetition</li>
+<li>context</li>
+</ul>
+
+<p>The motor is only one part of the composition.</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container responsive present fit-warning has-light-background fitted" data-background-color="#4ea998" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.766rem;">
+        <div style=""><h3 class="kicker" id="follow-upassignment">Follow-Up Assignment</h3><h2 id="kineticstudydocumentation">Kinetic Study Documentation</h2></div>
+        <div style=""><p>Document your mechanism with:</p>
+
+<ul>
+<li>one short video</li>
+<li>one photo of the mechanism</li>
+<li>one sentence describing the intended motion character</li>
+<li>one sentence describing the mechanical decision</li>
+<li>one sentence describing what you would change next</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section></div>
+</div>
+<script src="engine/index.js"></script>
+<script src="engine/pptxgen.min.js"></script>
+<script src="engine/pfill.js"></script>
+<script src="engine/published.js"></script>
+<script>
+Reveal.configure({
+progress:true,
+progress:true,
+dependencies: [
+  {
+    src: "engine/highlight.js",
+    sync: true,
+    callback: function () {
+      hljs.initHighlightingOnLoad();
+    },
+  },
+],
+});
+</script>
+</body>
+</html>
