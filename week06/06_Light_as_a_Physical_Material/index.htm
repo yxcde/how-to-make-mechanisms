@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1" />
+<link rel="stylesheet" href="engine/main.css">
+<link rel="stylesheet" href="theme/newyork.css">
+<link rel="stylesheet" href="engine/katex/katex.min.css">
+<style>
+:root{
+--logo: ;
+--darkaccent1color: #FFC400;
+--lightaccent1color: #FFC400;
+--accent2: #43aa8b;
+--accent3: #f9c74f;
+--accent4: #90be6d;
+--accent5: #f8961e;
+--accent6: #577590;
+--lighttitletextcolor: #FFC400;
+--darktitletextcolor: #000;
+--lightbodytextcolor: #FFF;
+--darkbodytextcolor: #000;
+--lightbackgroundcolor: #ffffff;
+--darkbackgroundcolor: #000000;
+--bodyfont: proxima nova;
+--titlefont: ibm plex sans;
+--lightframecolor: #FFFFFF;
+--darkframecolor: #000000;
+} 
+
+</style>
+</head>
+<body class="responsive">
+<div class="reveal">
+<div class="slides">
+<section class="variable-size-headings light cover-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h1 id="lightasaphysicalmaterial">Light as a Physical Material</h1>
+
+<h3 id="conceptcontrolexpression">Concept, Control &amp; Expression</h3>
+
+<h4 id="howtomakemechanismofcontrol-10.06.26">How to Make Mechanism of Control - 10.06.26</h4></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="learninggoals">Learning Goals</h2></div>
+        <div style=""><ul>
+<li>Explore expressive use of light (LEDs, commercial lamps, ...)</li>
+<li>Get inspired by light-based artworks</li>
+<li>Understand technical foundations and control</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="whatcanlightexpress">What can light express?</h3>
+
+<h3 id="howdowereadlightpatterns">How do we read light patterns?</h3></div>
+        <div style=""><h2 id="lightasamedium">Light as a Medium</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="PnQv8Di8Ark" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/PnQv8Di8Ark/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="kUtf7KkKRmM" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/kUtf7KkKRmM/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="l9GMjPfmaOc" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/l9GMjPfmaOc/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Akhob-2013-Florian-4S1-1440x960-1.jpg" class=" position-center-center"></figure>
+        <figure style=""><img src="images/181029162059-olafur-eliasson-189-weather-project.webp" class=" position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="notfamousyetdonthavesuchbudgetsso...">Not famous <em>yet</em>, don't have such budgets, so...</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="weuseindividuallycontrollablelampsleds">We use individually controllable lamps &amp; LEDs</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="butbeforeweshouldlookatcolour">But before we should look at colour</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="l8_fZPHasdo" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/l8_fZPHasdo/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="theuseofcolourto...">The use of colour to...</h2></div>
+        <div style=""><ul>
+<li>evoke emotion</li>
+<li>control the focus of the audience</li>
+<li>express contrast, rhythm and intensity</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="lINVnA3rVIE" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/lINVnA3rVIE/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="S8nDuuIucCc" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/S8nDuuIucCc/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><blockquote class="is-single-quote"><div class="line"></div>
+<p>In cinema, <strong>light tells the audience what to feel before</strong> any dialogue is spoken. </p>
+<div class="line"></div></blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="Q8f1mpMbOFw" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/Q8f1mpMbOFw/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="_oc21OOtZ_A" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/_oc21OOtZ_A/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h3 id="tadaoandō">Tadao Andō</h3></div>
+        <div style=""><p>He uses his built space as a <mark>canvas</mark> for (mostly) natural <mark>light and the shadows it creates</mark>. </p>
+
+<p>By <mark>violently restricting</mark> the light, Ando makes a single beam feel sacred. </p>
+
+<p><strong>Restraint</strong> in your artwork <strong>is often louder</strong> than blinding brightness.</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="ylIYHmbM0UA" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/ylIYHmbM0UA/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h3 id="jimcampbell">Jim Campbell</h3></div>
+        <div style=""><p>He focuses on <mark>ultra-low-definition</mark> works and <mark>unconventional diffusion</mark> methods to <mark>emphasise motion patterns</mark>. </p>
+
+<p>Building screens that <mark>recontextualise movement</mark> rather than relying solely on light.</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="ER0f1ANYxk4" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/ER0f1ANYxk4/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="randominternationalwaynemcgregor">Random International &amp; Wayne McGregor</h3>
+
+<p>Future Self</p></div>
+        <div style=""><p>While Jim Campbell mostly uses 2D-to-2.5D (topographic) matrices of LEDs, Random International has created full <mark>3D grids</mark> of individually addressable LEDs to <mark>rethink how we view motion and the body in space</mark>. </p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light title-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+        <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+        <div class="layout-title-image media-grid" style="width: 100%; font-size: 1rem;">
+          <div style=""><p><a href="https://www.uva.co.uk/features/aether"> https://www.uva.co.uk/features/aether </a></p></div>
+          <figure style=""><img src="images/AetherWeb03.jpg" class=" position-center-top"></figure>
+        </div>
+        <div class="footnotes"></div>
+        <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="unitedvisualartists">United Visual Artists</h3>
+
+<p>Aether</p></div>
+        <div style=""><p>1500 Drones equipped with LEDs create a large-scale 3D effect by synchronising the drones and lights in the sky.</p>
+
+<p>A dynamic shape canvas based on motion and controlled light.</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="xDTSZCpn_OU" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/xDTSZCpn_OU/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="teamlab">teamLab</h3>
+
+<p>Hidden Traces of Rice Terraces</p></div>
+        <div style=""><p>Colourful ambient <mark>lighting for space-making</mark> and (inter-)active <mark>single light fixtures</mark> are used to emphasise the forms of nature and <mark>reshape the perception</mark> of life's continuity. </p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="videoWrapper youtube" data-id="ksTis_1DDsU" onclick="iASpeaker.insertYouTubeIFrame(this);"><img src="https://i.ytimg.com/vi/ksTis_1DDsU/sddefault.jpg"><div class="playButton"></div></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="nonotak">NONOTAK</h3>
+
+<p>Highway LDN Eclipse</p></div>
+        <div style=""><p>Thinking in addressable LED "strips" can be an approach to create different <mark>motion patterns</mark>. </p>
+
+<p>Maybe <strong>less flashy</strong> but <strong>potentially stronger</strong> in its artistic expression?</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light cover-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="whattopayattentiontowithleds">What to pay attention to with LEDs?</h1>
+
+<h3 id="technologyoverview">Technology overview</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/addressable-led-strip-vs-nonaddressable-led-strip.gif" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light grid-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 " style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="addressableleds-beyondonoff">Addressable LEDs - Beyond On/Off</h2></div><div style=""><ul>
+<li>RGB or RGBW LEDs with control chips</li>
+<li>Popular types: WS2812B (NeoPixel), SK6812, APA102</li>
+</ul></div><div style=""><p><strong>Why Addressable?</strong> </p>
+
+<ul>
+<li>Each pixel can have an individual colour + brightness</li>
+<li>Controlled over a single or dual data line</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Venn_diagram_rgb.svg.png" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/1734-01.jpg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/2659-03.jpg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/1655-00.jpg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/1461-00.jpg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h2 id="hardwarebasicstoconsider">Hardware Basics to Consider</h2></div>
+        <div style=""><h4 id="-differentchips">- different chips</h4>
+
+<h4 id="-power:voltagecurrentinjectionpoints">- Power: voltage, current, injection points</h4>
+
+<h4 id="-signal:one-ortwo-wiredataresiliencechaininglimits">- Signal: one- or two-wire data, resilience, chaining limits</h4>
+
+<h3 id="payextraattentiontothevoltageofyourledstrip">Pay extra attention to the voltage of your LED strip!!</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 0.719rem;">
+        <div style="">
+          <h3 id="comparingledstriptypes">Comparing LED Strip Types</h3>
+
+<table>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+
+<thead>
+<tr>
+	<th>Chip</th>
+	<th>Data Line</th>
+	<th>Refresh Rate</th>
+	<th>Pros</th>
+	<th>Cons</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>WS2812B</td>
+	<td>Single wire</td>
+	<td>~400Hz</td>
+	<td>Simple, common</td>
+	<td>Needs strict timing, can flicker</td>
+</tr>
+<tr>
+	<td>APA102/107</td>
+	<td>Clock + Data</td>
+	<td>~20kHz</td>
+	<td>Flicker-free, fast</td>
+	<td>More wiring</td>
+</tr>
+<tr>
+	<td>SK6812</td>
+	<td>Single wire</td>
+	<td>Similar to WS2812</td>
+	<td>RGBW available</td>
+	<td>Needs strict timing, can flicker</td>
+</tr>
+</tbody>
+</table>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="arduinocontroloverview">Arduino Control Overview</h3>
+
+<ul>
+<li>Digital signal chain</li>
+<li>MCU controls the data and timing for digital LEDs</li>
+<li>Signal → Pixel → Timing</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 0.953rem;">
+        <div style="">
+          <h3 id="arduinoledlibrariesoverview">Arduino LED Libraries Overview</h3>
+
+<table>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+
+<thead>
+<tr>
+	<th>Library</th>
+	<th>Ease</th>
+	<th>Features</th>
+	<th>Notes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>NeoPixel</td>
+	<td>Easy</td>
+	<td>Basic effects</td>
+	<td>Blocking</td>
+</tr>
+<tr>
+	<td>FastLED</td>
+	<td>Medium</td>
+	<td>Palettes, non-blocking</td>
+	<td>Recommended</td>
+</tr>
+</tbody>
+</table>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="timingperformance">Timing &amp; Performance</h3>
+
+<ul>
+<li>Frame rate bottlenecks (esp. WS2812B)</li>
+<li>Blocking vs non-blocking animations</li>
+<li>Serial + LED timing challenges</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light grid-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 " style="width: 100%; font-size: 0.859rem;">
+        <div style=""><h2 id="calculatingledpowerrequirements">Calculating LED Power Requirements</h2></div><div style=""><p><strong>Power for Pixel Control</strong></p>
+
+<ul>
+<li>Each RGB LED draws up to 60mA (20mA per color)</li>
+<li>Formula:<br>
+ <code class="hljs apache"><span class="hljs-attribute">Total</span> Current (A) = Number of LEDs × <span class="hljs-number">0</span>.<span class="hljs-number">06</span></code></li>
+</ul></div><div style=""><p><strong>Example for 150 LEDs :</strong> </p>
+
+<p>150 × 0.06 = 9A @ 5V = <strong>45W</strong></p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="rulesforwirethickness">Rules for wire thickness</h3>
+
+<p>How to chose which cables to use</p>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><h3 id="1.thecoreconcept:loweristhicker">1. The Core Concept: "Lower is Thicker"</h3></div>
+        <div style=""><p>Wire thickness is often described in <strong>AWG</strong> (American Wire Gauge) in the EU in square millimeters.</p>
+
+<p>The <strong>lower the number</strong>, the <strong>thicker the wire</strong>.</p>
+
+<pre><code class="hljs axapta">- <span class="hljs-number">28</span> AWG <span class="hljs-keyword">is</span> <span class="hljs-keyword">like</span> a human hair (fragile, low power)
+- <span class="hljs-number">18</span> AWG <span class="hljs-keyword">is</span> <span class="hljs-keyword">like</span> a drinking straw (robust, high power) 
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light grid-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 " style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="2.thegoldenrule:brainsvs.muscle">2. The Golden Rule: Brains vs. Muscle</h3>
+
+<p>Divide every project into two categories:</p></div><div style=""><p><strong>The Brains</strong> (Data &amp; Logic): Any wire sending a signal (sensors, PWM to a servo, data to an LED strip). These draw almost zero current. Use any wire you want.</p></div><div style=""><p><strong>The Muscle</strong> (Power &amp; Ground): Any wire actively powering a motor, solenoid, or LED strip. These require actual current. This is where gauge matters.</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><h3 id="3.thebreadboardlimitthe1-amprule">3. The "Breadboard Limit" (The 1-Amp Rule)</h3>
+
+<p>Standard breadboard jumper wires are usually 28 AWG or 26 AWG.</p></div>
+        <div style=""><p>The Rule: A standard jumper wire can safely carry <strong>a maximum of</strong> 1 Amp of current before it gets <mark>hot enough to melt</mark> the plastic breadboard.</p>
+
+<pre><code class="hljs erlang">What is <span class="hljs-number">1</span> Amp?
+- 1 Micro Servo <span class="hljs-params">(SG90)</span> under heavy load.
+- 1 Small Stepper Motor <span class="hljs-params">(<span class="hljs-number">28</span>BYJ-<span class="hljs-number">48</span>)</span>.
+- ~16 NeoPixels <span class="hljs-params">(WS2812B)</span> at maximum brightness <span class="hljs-params">(full white)</span>.
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.672rem;">
+        <div style=""><h3 id="4.theruleof4sforselectingawg">4. The "Rule of 4s" for Selecting AWG</h3>
+
+<p>Wire thickness rule of thumb</p></div>
+        <div style=""><p><strong>Amps:</strong></p>
+
+<ul>
+<li><p>0 – 1 Amp <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.3669em;"></span><span class="mrel">→</span></span></span></span></span> 24 AWG (standard jumpers) </p>
+ Use Case: Single servos, small sensors, a few LEDs.</li>
+<li><p>1 – 4 Amps <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.3669em;"></span><span class="mrel">→</span></span></span></span></span> 20 AWG </p>
+ Use Case: A 1-meter strip of NeoPixels (60 LEDs), 2-3 servos running at once, or a small solenoid.</li>
+<li><p>4 – 10 Amps <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.3669em;"></span><span class="mrel">→</span></span></span></span></span> 16 AWG </p>
+Use Case: Massive LED matrixes, powerful stepper motors, or high-torque DC motors.</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light grid-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 " style="width: 100%; font-size: 0.813rem;">
+        <div style=""><h3 id="5.thedistancetaxvoltagedrop">5. The Distance Tax (Voltage Drop)</h3>
+
+<p>Electricity <strong>gets tired</strong>. The longer the wire, the more resistance it has.</p></div><div style=""><p>The Rule: </p>
+
+<p>If your power wire needs to be <mark>longer than 1 meter</mark> (e.g., running from a power supply on the floor up to a kinetic sculpture on the ceiling), <mark>step down one gauge size</mark> (make it thicker).</p></div><div style=""><p><em>Example:</em> </p>
+
+<p>If you need 20 AWG for a 2-Amp load, but the wire is 2 meters long, use 18 AWG instead.</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h3 id="powersupplies">Power Supplies</h3>
+
+<p>Best practices</p></div>
+        <div style=""><ul>
+<li>Use a power supply that has <mark>more amperage than needed</mark> for "headroom"</li>
+<li>Feed power at both ends of a <em>long</em> LED strip</li>
+<li>Use a <mark>thicker wire gauge</mark> to reduce voltage drop <mark>for long cables</mark></li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.719rem;">
+        <div style=""><h2 id="microcontrollersledslimitations">Microcontrollers + LEDs Limitations</h2></div>
+        <div style=""><ul>
+<li><strong>Memory limits:</strong> Arduino UNO has 2KB RAM our Pico 2W has 520 KB RAM</li>
+<li>WS2812B = 3 bytes/pixel → Max ≈ 600 LEDs</li>
+<li>Timing sensitive libraries (FastLED, Adafruit NeoPixel)</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h3 id="bestpracticeforlargeledinstallations">Best practice for large LED installations</h3>
+
+<ul>
+<li>Offload logic to external controllers for large installs</li>
+<li>Example: Advatek or Enttec are companies that produce LED Pixel Controllers</li>
+</ul></div>
+        <figure style=""><img src="images/IMG_0694.jpeg" class=" position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light title-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="demo1:colourviaserialinput">Demo 1: Colour via Serial Input</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light title-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="demo2:reactivesensorinput">Demo 2: Reactive Sensor Input</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h2 id="taskmood">Task "MOOD"</h2>
+
+<ul>
+<li>Choose a mood</li>
+<li>Express it with 10, 30, 60 LEDs</li>
+<li>Use colour, rhythm, intensity</li>
+<li>Optionally: sensor input</li>
+</ul></div>
+        <div style=""><h3 id="referencemoodexamples">Reference Mood Examples</h3>
+
+<ul>
+<li>Calm → slow fades, blues</li>
+<li>Anticipation → pulsing whites</li>
+<li>Anger → sharp red flicker</li>
+<li>Nostalgia → soft, warm tones</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="bonustaskoptional">Bonus Task (optional)</h3>
+
+<p><strong>Responsive Ambience</strong></p>
+
+<ul>
+<li>Use a sensor to control LED behaviour</li>
+<li>Data → Expression</li>
+<li>Real-world examples: ambient light, attention cues</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section></div>
+</div>
+<script src="engine/index.js"></script>
+<script src="engine/pptxgen.min.js"></script>
+<script src="engine/pfill.js"></script>
+<script src="engine/published.js"></script>
+<script>
+Reveal.configure({
+progress:true,
+progress:true,
+dependencies: [
+  {
+    src: "engine/highlight.js",
+    sync: true,
+    callback: function () {
+      hljs.initHighlightingOnLoad();
+    },
+  },
+],
+});
+</script>
+</body>
+</html>
