@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1" />
+<link rel="stylesheet" href="engine/main.css">
+<link rel="stylesheet" href="theme/tokyo.css">
+<link rel="stylesheet" href="engine/katex/katex.min.css">
+<style>
+:root{
+--logo: ;
+--darkaccent1color: ;
+--lightaccent1color: ;
+--accent2: #43aa8b;
+--accent3: #f9c74f;
+--accent4: #90be6d;
+--accent5: #f8961e;
+--accent6: #577590;
+--lighttitletextcolor: #ffffff;
+--darktitletextcolor: #000000;
+--lightbodytextcolor: #ffffff;
+--darkbodytextcolor: #000000;
+--lightbackgroundcolor: transparent;
+--darkbackgroundcolor: transparent;
+--bodyfont: system-ui;
+--titlefont: system-ui;
+--lightframecolor: #FFFFFF;
+--darkframecolor: #000000;
+} 
+
+</style>
+</head>
+<body class="responsive">
+<div class="reveal">
+<div class="slides">
+<section class="variable-size-headings light cover-container responsive present has-light-background fitted" data-background-color="#d3e9f8" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h3 class="kicker" id="howtoapproachyour">How to approach your</h3><h1 id="idea">Idea</h1>
+
+<h3 id="tobuilda">to build a</h3>
+
+<h1 id="prototype">Prototype</h1>
+
+<h4 id="howtomakemechanismofcontrol-17june26">How to make Mechanism of Control - 17 June 26</h4></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light cover-container responsive present has-light-background fitted" data-background-color="#d2e7f6" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="andlater">AND later</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light cover-container responsive present has-light-background fitted" data-background-color="#d1e5f4" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 class="kicker" id="howtoprepyour">How to prep your</h3><h1 id="prototype">Prototype</h1>
+
+<h3 id="foran">for an</h3>
+
+<h1 id="exhibition">Exhibition</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light title-container responsive present has-light-background fitted" data-background-color="#d1e3f2" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="butfirst">But first</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-background-color="#d0e1f0" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="ihaveanideabutwhatdoidofirst">I have an Idea but <mark>what</mark> do I do first?</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-background-color="#cfdfee" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="trydeconstructingyouridea-doesitneed...">Try deconstructing your idea - Does it need...</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-background-color="#cfdeed" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="input">INPUT</h3>
+
+<pre><code class="hljs ada"> How <span class="hljs-keyword">do</span> I <span class="hljs-keyword">and</span> <span class="hljs-keyword">others</span> communicate <span class="hljs-keyword">with</span> my idea?
+</code></pre>
+
+<ul>
+<li>What kind of input?</li>
+<li>Is it interactive, reactive or simply does it's own thing?</li>
+</ul></div>
+        <div style=""><h3 id="output">OUTPUT</h3>
+
+<pre><code class="hljs applescript">How <span class="hljs-keyword">does</span> <span class="hljs-keyword">my</span> idea communicate <span class="hljs-keyword">with</span> others?
+</code></pre>
+
+<ul>
+<li>Does it move?</li>
+<li>Is it visual?</li>
+<li>Does it have sound?</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-background-color="#d2ddec" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h3 id="inputoptions">INPUT options</h3>
+
+<ul>
+<li>Sensors (light, sound, gas, etc.)</li>
+<li>User input (Knobs, keyboard, body input such as Kinect)</li>
+<li>Data from the internet or from other sources</li>
+<li>Mixtures of all or some of the above?</li>
+</ul></div>
+        <div style=""><h3 id="outputoptions">OUTPUT options</h3>
+
+<ul>
+<li>Motors (Stepper, DC, Servo)</li>
+<li>Lights (LEDs, DMX controlled stage lights)</li>
+<li>Small speakers or more intricate sound design</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-background-color="#d5ddec" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="makingawishlist">Making a wishlist</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-background-color="#d8dceb" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Motion_w_reflection.jpg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-background-color="#dcdceb" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Experience.png" class=" size-contain position-center-center"></figure>
+        <figure style=""><img src="images/Superpose_main.png" class=" position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-background-color="#dfdbea" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="makingawishlist">Making a wishlist</h3>
+
+<ol>
+<li>It needs to <mark>sense people</mark> and their movement</li>
+<li>It should <mark>make waves</mark> in water</li>
+<li>The waves should be translated into <mark>sound</mark></li>
+</ol></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-background-color="#e3dbea" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="translatingourwishlist">Translating our wishlist</h3>
+
+<ol>
+<li><mark>sense people</mark> = some sensor input</li>
+<li><mark>make waves</mark> = a kinetic system</li>
+<li><mark>sound</mark> = a data-driven system of speakers</li>
+</ol></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-background-color="#e4d9e7" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><blockquote class="is-single-quote"><div class="line"></div>
+<p>Divide and conquer - Julius Caesar</p>
+<div class="line"></div></blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light cover-container responsive present has-light-background fitted" data-background-color="#e5d6e4" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 class="kicker" id="useyourwishlisttodefinepartsthatneedtowork">Use your wishlist to define parts that need to work</h3><h1 id="andgoexplore">and go explore</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light grid-container responsive present has-light-background fitted" data-background-color="#e6d4e1" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 has-only-media media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="layout-grid media-grid grid-items-4"><figure><img src="images/Dipper_Motorfader.png" class=" position-center-center"></figure><figure><img src="images/Dipper_Seesaw.png" class=" position-center-center"></figure><figure><img src="images/Dipper_Single_sided.png" class=" position-center-center"></figure><figure><img src="images/Frame_Exciters.png" class=" position-center-center"></figure></div>
+
+
+</div><figure style=""><img src="images/Piston.png" class=" position-center-center"></figure><figure style=""><img src="images/Volume_Water_Droplets.png" class=" position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light grid-container responsive present has-light-background fitted" data-background-color="#e7d2de" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 has-only-media media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Fader.jpeg" class=" position-center-center"></figure><figure style=""><img src="images/Piston_Top_02.png" class=" position-center-center"></figure><figure style=""><img src="images/Solenoid_Setup.jpeg" class=" position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-background-color="#e7cfdb" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="refineyourwishlistintoafunctionalitylist">Refine your wishlist into a functionality list</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-background-color="#e8cdd7" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h3 id="functionalitylistforsuperpose">Functionality list for superpose</h3>
+
+<ul>
+<li>Sense <mark>change in distance</mark> to the table from an audience member = distance sensor</li>
+<li>Create <mark>controlled waves silently</mark> = stepper motor with position control</li>
+<li>Create sound from the <mark>patterns</mark> the wave create on the water</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-background-color="#e9ced7" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/210730_Dipper_Overview_touchup.jpg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-background-color="#ebd1d8" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/210730_Dipper_Overview_touchup%20copy.jpeg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present fit-warning has-light-background fitted" data-background-color="#ecd4d9" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.766rem;">
+        <div style=""><h3 id="buildcodeinindividualsketches">Build code in individual sketches</h3>
+
+<ol>
+<li>Sensor control</li>
+<li>Motor control</li>
+<li>Communication of the sensor and the motor</li>
+<li>Calibration of input-output behaviour</li>
+<li>Start-up routine</li>
+</ol>
+
+<h3 id="wecreateourowntoolboxtocomebackto">We create our own toolbox to come back to</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-background-color="#edd7da" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h3 id="sensorcodestobuildandtry">Sensor codes to build and try</h3>
+
+<p><mark>changes in distance</mark></p></div>
+        <div style=""><ol>
+<li>Get control of the sensor
+
+<ol>
+<li>Get data</li>
+<li>Test sending or using data for something</li>
+<li>Maybe normalise data to a 0.0 - 1.0 range</li>
+<li>Add a self-calibration routine at power-on</li>
+</ol></li>
+</ol></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-background-color="#efdadb" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/4_Filter_Signal%20.png" class=" size-contain position-center-center"></figure>
+        <figure style=""><img src="images/4_Filter_Signal_02.png" class=" size-contain position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-background-color="#f0dcdc" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.859rem;">
+        <div style=""><h3 id="motorcodestobuildandtry">Motor codes to build and try</h3>
+
+<p><mark>controlled and silent moves</mark></p></div>
+        <div style=""><ol>
+<li>Get control of the motor
+
+<ol>
+<li>Make it move</li>
+<li>Test speed and maximum acceleration</li>
+<li>Find a stable way to send data to control movement</li>
+<li>Add a homing routine at power-on for position control (with a limit switch or other sensor)</li>
+</ol></li>
+</ol></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-background-color="#f1dedd" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><h3 id="soundcontrol">Sound control</h3>
+
+<p><mark>Translate patterns to sound</mark></p></div>
+        <div style=""><ol>
+<li>Recognise patterns with image or sensor input</li>
+<li>If external sound synthesis (aka. Ableton or similar), a communication protocol is needed (i.e. MIDI or OSC)</li>
+<li>Simple MIDI control sketch for notes and volume change</li>
+<li>Data-driven changes</li>
+</ol></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-background-color="#f2e0dd" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="startintegratingyourindividualfunctionalitiesintoalargersystem">Start integrating your individual functionalities into a larger system</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-background-color="#f3e1dd" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><blockquote class="is-single-quote"><div class="line"></div>
+<p>Ask yourself <mark>what is needed</mark> for the idea to work. Define <mark>input, output and behaviour</mark>. <strong>Sketch and try</strong>. <mark>Build in blocks</mark> that do one thing and keep those blocks to come back to. <mark>Build</mark> the larger systems <mark>from your blocks</mark>. </p>
+<div class="line"></div></blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light cover-container responsive present has-light-background fitted" data-background-color="#f5e2dd" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 class="kicker" id="howtoprepyour">How to prep your</h3><h1 id="prototype">Prototype</h1>
+
+<h3 id="foran">for an</h3>
+
+<h1 id="exhibition">Exhibition</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-background-color="#f6e4dd" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="hardeningaprototypeisntaboutmakingitwork–itsaboutmakingitlast">"Hardening" a prototype isn't about making it work – it's about <mark>making it last</mark></h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-background-color="#f7e5dd" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="todaysfocus:">Today's focus:</h3>
+
+<ul>
+<li>Enclosure and mounting</li>
+<li>Mechanical parts</li>
+<li>Secure wiring</li>
+<li>Stable power supply</li>
+<li>Reboot-proof code</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light title-image-container responsive present has-light-background fitted" data-background-color="#f7e6de" data-updated="true" style="display: grid;">
+
+        <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+        <div class="layout-title-image media-grid" style="width: 100%; font-size: 1rem;">
+          <div style=""><h4 id="perma-protoboards">Perma-Proto Boards</h4></div>
+          <figure style=""><img src="images/Perma_Proto_Board_591-00.jpg" class=" position-center-center"></figure>
+        </div>
+        <div class="footnotes"></div>
+        <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-background-color="#f7e6df" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h4 id="solderingcomponents">Soldering components</h4>
+<div class="single-image-wrapper"><figure><img src="images/Soldering_in9xotw6nzod1.jpeg" class=" size-contain position-center-center"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-background-color="#f6e6e0" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h3 id="whattosolder">What to solder?</h3>
+
+<ul>
+<li>All <mark>passive parts</mark> (resistors, capacitors, LEDs, connectors)</li>
+<li>Use pin headers and pin sockets for <mark>removable parts</mark></li>
+<li>Use <mark>cables and connectors</mark> for longer connections</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light grid-container responsive present has-light-background fitted" data-background-color="#f6e7e2" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-1 has-only-media media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="layout-grid media-grid grid-items-2"><figure><img src="images/PRoto_Shield_2077-02.jpg" class=" position-center-center"></figure><figure><img src="images/Proto_Wingshield196-01.jpg" class=" position-center-center"></figure></div>
+
+
+<h4 id="protoshields">Proto Shields</h4></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-background-color="#f5e7e3" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Header_F_3008-03.jpg" class=" position-left-center"></figure>
+        <figure style=""><img src="images/Header_m_3009-02.jpg" class=" position-right-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-background-color="#f5e7e4" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="cables">Cables</h3>
+
+<p>Do not <mark>solder jumper wires</mark>; they break easily.</p>
+
+<p>Use <mark>solid-core</mark> or <mark>stranded-core</mark> cable instead.</p>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-background-color="#f4e8e4" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Electrical-Wires-FPV-Drones-stranded-vs-solid-core.jpg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light title-image-container responsive present has-light-background fitted" data-background-color="#f4e8e2" data-updated="true" style="display: grid;">
+
+        <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+        <div class="layout-title-image media-grid" style="width: 100%; font-size: 1rem;">
+          <div style=""><h4 id="ribboncables">Ribbon cables</h4></div>
+          <figure style=""><img src="images/Ribbon_Cable5453-02.jpg" class=" position-center-center"></figure>
+        </div>
+        <div class="footnotes"></div>
+        <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-background-color="#f3e8e0" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="ribboncables">Ribbon cables</h3>
+
+<ul>
+<li>Multiple connections in the same direction</li>
+<li>Rainbow ones make it easier not to confuse end positions</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light title-image-container responsive present has-light-background fitted" data-background-color="#f3e8de" data-updated="true" style="display: grid;">
+
+        <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+        <div class="layout-title-image media-grid" style="width: 100%; font-size: 1rem;">
+          <div style=""><h4 id="useconnectorsforpartsthatyouneedtounplug">Use connectors for parts that you need to unplug</h4></div>
+          <figure style=""><img src="images/Plugs_4872-02.jpg" class=" position-center-center"></figure>
+        </div>
+        <div class="footnotes"></div>
+        <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-background-color="#f2e8dd" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="checkthatthegroundisconnectedcorrectly">Check that the <mark>ground</mark> is connected correctly!!!</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-background-color="#f2e8db" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 0.953rem;">
+        <div style="">
+          <h3 id="leaveagapbetweenyourpcbsolderedproto-boardandanyenclosure.electricallyisolateitfromanymetalpiecesorcasesyoumightuse.usestandoffsforthis."><mark>Leave a gap</mark> between your PCB/soldered Proto-board <mark>and any enclosure</mark>. Electrically <mark>isolate</mark> it from any metal pieces or cases you might use. Use <mark>standoffs</mark> for this.</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-background-color="#f1e9d9" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Standoff_1_2337-02.jpg" class=" position-center-center"></figure>
+        <figure style=""><img src="images/Standoff_2_2337-01.jpg" class=" position-left-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light has-background-image section-container responsive present has-light-background fitted" data-background-image="images/Mounting_Sheet_275-00.jpg" data-background-color="#f1ead9" style="display: grid;" data-updated="true">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="mounting">Mounting</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-light-background fitted" data-background-color="#f1ebd9" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Mounting_Grid_5779-05.jpg" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-background-color="#f1ecd8" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/THread_Inserts40228611903_ceab5667c9_k.jpg" class=" position-center-center"></figure>
+        <figure style=""><img src="images/Thread_INsertsB088QJG676-Staffel_Lupe_1200x.jpg" class=" size-contain position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-background-color="#f1edd8" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="3dprinting">3D Printing</h3>
+
+<ol>
+<li><p>Higher than <mark>50% infill</mark> usually won't offer better mechanical stability. </p>
+-&gt; Go for more (3+) <mark>perimeters</mark> (walls).</li>
+<li>If the part is small, try using a <mark>Brim</mark> to hold the corners down.</li>
+</ol></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-background-color="#f1efd8" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="tip:">Tip:</h3>
+
+<ul>
+<li><p>If necessary: Increase mechanical strength by filling the inside of your print with resin. </p>
+-&gt; Pay attention to the resins curing temperature!</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-background-color="#f0f0d8" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="ifyouprintacaseensureaholeorbuttontoreachtheresetbuttononyourmicrocontrollerarduino.">If you print a case, ensure a <mark>hole or button</mark> to reach the <mark>reset</mark> button on your Microcontroller/Arduino.</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-background-color="#eef0da" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="testyourbuildcontinuouslyformorethanoneday.softwareandhardware"><mark>Test</mark> your build continuously for <mark>more than one day</mark>. Software <mark>and</mark> Hardware</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-background-color="#edf0dc" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h3 id="whattolookforintesting:">What to look for in testing:</h3>
+
+<ul>
+<li>Is the temperature ok?</li>
+<li>What is the ambient temperature while you test?</li>
+<li>Are the mechanics still working?</li>
+<li>Is something making scratching or squeaking sounds?</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-background-color="#ebf0de" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="movementandmechanicsneedlubrication.usemechanicalgreasewherepossibleorlubricationspraysforsmallerparts.">Movement and mechanics need <mark>lubrication</mark>. Use <mark>mechanical grease</mark> where possible or lubrication sprays for smaller parts.</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-background-color="#e9f0e0" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h3 id="foryourcomputer:">For your computer:</h3>
+
+<ul>
+<li>Ensure you have <mark>remote access</mark> if you plan to exhibit it in a venue where you will not be physically present.</li>
+<li>Deactivate all <mark>auto-update</mark> functions.</li>
+<li><mark>Reboot</mark> the computer on a timer (maybe once a week)</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light cover-container responsive present has-light-background fitted" data-background-color="#e7f0e3" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="dosdonts">DOs &amp; DON'Ts</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present fit-warning has-light-background fitted" data-background-color="#e5f0e5" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.766rem;">
+        <div style=""><h3 id="dos">DOs</h3>
+
+<ul>
+<li>Use soldered perma-proto boards or custom PCBs to replace breadboards.</li>
+<li>Apply shrink tubing to secure wire joints.</li>
+<li>Use screw terminals or pluggable connectors (JST, Molex) for replaceable components.</li>
+<li>Add capacitors to stabilise power if motors or LEDs are involved.</li>
+</ul></div>
+        <div style=""><h3 id="don’ts">DON’Ts</h3>
+
+<ul>
+<li>Don’t leave wires loose or tensioned—they’ll break or disconnect.</li>
+<li>Don’t use breadboards alone for multi-day use or with moving parts.</li>
+<li>Don’t mix power grounds (e.g., USB + external power) without care.</li>
+</ul>
+
+<h1 id="electronics">Electronics</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present fit-warning has-light-background fitted" data-background-color="#e5f0e6" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.766rem;">
+        <div style=""><h3 id="dos">DOs</h3>
+
+<ul>
+<li>Use thread-locking compounds (e.g., Loctite) or lock washers on moving assemblies.</li>
+<li>Add mechanical stops to prevent motor overrun.</li>
+<li>Use flexible couplings or rubber isolators to dampen vibrations.</li>
+<li>Always plan for manual override or emergency shutoff for kinetic elements.</li>
+</ul></div>
+        <div style=""><h3 id="don’ts">DON’Ts</h3>
+
+<ul>
+<li>Don’t over-tighten or glue servos and motors—leave room for serviceability.</li>
+<li>Don’t mount moving parts directly to fragile structures.</li>
+<li>Don’t ignore torque or weight mismatches.</li>
+</ul>
+
+<h1 id="mechanicskinetics">Mechanics / Kinetics</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-background-color="#e4efe7" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.813rem;">
+        <div style=""><h3 id="dos">DOs</h3>
+
+<ul>
+<li>Use brass heat inserts for reliable screw fittings.</li>
+<li>Design modular parts for easy replacement or repair.</li>
+<li>Print with PETG or PLA+ for strength and temperature stability.</li>
+<li>Add ventilation slots if electronics generate heat.</li>
+<li>Plan for access to reset buttons.</li>
+</ul></div>
+        <div style=""><h3 id="don’ts">DON’Ts</h3>
+
+<ul>
+<li>Don’t rely on press-fit alone unless intentionally designed.</li>
+<li>Avoid designs with too-thin walls or unsupported overhangs.</li>
+<li>Don’t enclose electronics without airflow or access.</li>
+</ul>
+
+<h2 id="3dprintingandcases">3D Printing and Cases</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light grid-container responsive present has-light-background fitted" data-background-color="#e3eee8" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 " style="width: 100%; font-size: 0.813rem;">
+        <div style=""><h3 id="dos">DOs</h3>
+
+<ul>
+<li><p>Utilise laser-cut acrylic, wood, or 3D-printed enclosures for protection and style.</p>
+Mount enclosures using bolts, Velcro, magnets, or brackets, depending on the setup.</li>
+<li>Leave cutouts for SD cards, USB ports, or status LEDs.</li>
+</ul></div><div style=""><h3 id="don’ts">DON’Ts</h3>
+
+<ul>
+<li>Don’t hide controls or indicators needed during setup or failure!</li>
+<li>Don’t assume everything will stay plugged in — account for human interaction (and stupidity).</li>
+</ul></div><div style=""><h1 id="enclosuresandmounting">Enclosures and Mounting</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-light-background fitted" data-background-color="#e3eee9" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.813rem;">
+        <div style=""><h3 id="dos">DOs</h3>
+
+<ul>
+<li>Include watchdog timers and restart mechanisms for long uptime.</li>
+<li>Use non-blocking code (millis() instead of delay()).</li>
+<li>Log errors (Serial or LED indicators).</li>
+<li>Design for headless operation, aka plug-n-play (boots automatically, no user setup).</li>
+</ul></div>
+        <div style=""><h3 id="don’ts">DON’Ts</h3>
+
+<ul>
+<li>Don’t rely on serial monitors or debugging tools at runtime.</li>
+<li>Avoid making last-minute code changes unless they are well-tested.</li>
+<li>Don’t overcomplicate the interface — make it idiot-proof.</li>
+</ul>
+
+<h2 id="codeandsoftware">Code and Software</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-light-background fitted" data-background-color="#e2edea" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="checklistforyourprototype:">Checklist for your prototype:</h3>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Enclosure and mounting secure</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Mechanical parts well balanced</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Secure wiring</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Stable power supply</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Reboot-proof code</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light section-container responsive present has-light-background fitted" data-background-color="#e2edeb" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="additionalresources:">Additional resources:</h3>
+
+<p><a href="https://hackaday.com/2019/02/28/threading-3d-printed-parts-how-to-use-heat-set-inserts/">Threading 3D Printed Parts: How to use heat-set inserts</a></p>
+
+<p><a href="https://www.ruthex.de/en/collections/gewindeeinsatze">Buy Thread inserts</a></p>
+
+<p><a href="https://griffineffects.com/info/how-to/soldering-101">Soldering 101</a></p>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section></div>
+</div>
+<script src="engine/index.js"></script>
+<script src="engine/pptxgen.min.js"></script>
+<script src="engine/pfill.js"></script>
+<script src="engine/published.js"></script>
+<script>
+Reveal.configure({
+progress:true,
+progress:true,
+dependencies: [
+  {
+    src: "engine/highlight.js",
+    sync: true,
+    callback: function () {
+      hljs.initHighlightingOnLoad();
+    },
+  },
+],
+});
+</script>
+</body>
+</html>
